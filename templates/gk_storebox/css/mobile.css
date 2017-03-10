@@ -1,0 +1,689 @@
+/*
+#------------------------------------------------------------------------
+# Store Box - March Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+body {
+	padding: 10px 5px 30px 5px!important;
+}
+
+#gkSidebar .box,
+#gkBottom1 .box,
+#gkBottom2 .box {
+	clear: both!important;
+	float: none!important;
+	margin: 0 auto;
+	max-width: 320px;
+	width: 100%;
+}
+#gkBottom1 .box,
+#gkBottom2 .box {
+	margin-bottom: 20px;	
+}
+#gkSidebar > div {
+	margin-top: 20px!important;
+	padding-top: 25px!important;
+}
+#gkSidebar > div > .box {
+	float: none;
+	margin-top: 0!important;
+	margin-bottom: 12px!important;
+	width: 100%;
+}
+#gkSidebar > div > .box:nth-child(2n+1) {
+	clear: both!important;
+}
+#gkSidebar > div > .box:nth-child(odd) {
+	padding-right: 0px;	
+}
+#gkSidebar > div > .box:nth-child(even) {
+	padding-left: 0px;
+}
+#gkContent {
+	padding-top: 10px;
+}
+#gkSearch {
+	margin-top: 5px;
+}
+#gkMobileMenu {
+	margin-top: 61px;
+}
+#gkTopMenu {
+	clear: left;
+	float: left;
+	margin: 10px 0;
+}
+#gkTopMenu li {
+	margin: 0 5px 0 0!important;
+}
+#gkTopMenu li a {
+	margin: 0;
+}
+#gkTopMenu li::before {
+	display: none;
+}
+#gkContentWrap > section:first-child {
+	padding-top: 10px;
+}
+#gkBreadcrumb {
+	margin-bottom: 20px;
+}
+.blog article header ul {
+	margin: 10px 0 0 0;
+}
+#article-index {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+}
+pre, 
+.gkCode1, 
+.gkCode2, 
+.gkCode3 {
+	font: normal .65em/20px 'Curier New', monospace!important;
+	padding: 16px 20px!important;	
+}
+
+/* limitation suffixes */
+.notablet {
+	display: block!important;
+}
+.nomobile {
+	display: none!important;
+}
+.onlytablet {
+	display: none!important;
+}
+.onlymobile {
+	display: block!important;
+}
+.notablet.nomobile {
+	display: none!important;
+}
+
+/* Fix for the user profile */
+.profile dt {
+	width: 100% !important;
+}
+
+/* Fix for the contact page */
+.contact .contact-image {
+	float: left !important;
+}
+.contact .contact-address {
+	clear: both !important;
+	padding-top: 20px !important;
+}
+.contact .contact-form input,
+.contact .contact-form textarea {
+	width: 100% !important;
+}
+
+/* Fix for the search */
+fieldset.word #search-searchword,
+fieldset.word .inputbox {
+	width: 50%;
+}
+fieldset.phrases .ordering-box,
+fieldset.only input[type="checkbox"],
+fieldset.phrases input[type="radio"] {
+	clear: both;
+}
+.result-title {
+	font-size: 18px;
+}
+
+/* Fix for the register */
+#member-registration dd {
+	clear: both !important;
+	display: block !important;
+}
+
+/* Fix for tables */
+fieldset {
+	box-sizing: border-box!important;
+	max-width: 100%!important;
+	width: 100%!important;
+	overflow: hidden;
+}
+
+#gkMainbody table {
+	font-size: 11px;
+}
+
+@media only screen and (max-width: 400px) {
+	#gkMainbody table {
+		width: 100%!important;
+	}
+	
+	#gkMainbody table tr,
+	#gkMainbody table th,
+	#gkMainbody table td {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		border: none;
+		display: block;
+		width: 100%!important;
+	}
+	
+	#gkMainbody table tr {
+		border-bottom: 1px solid #eee;
+	}
+}
+
+/*
+Alternative table code:
+-----
+#gkMainbody table:before {
+	content: "Scroll horizontally to view the whole table";
+	height: 14px;
+	width: 100%;
+	display: block;
+	font-size: 10px;
+	margin-top: -30px;
+	margin-bottom: 10px;
+	font-family: Arial, sans-serif;
+}
+#gkMainbody table {
+	width: 540px!important;
+	display: block!important;
+	padding: 30px 0 20px 0;
+	overflow:scroll;
+	-webkit-overflow-scrolling:touch;
+}
+#gkMainbody table tbody,
+#gkMainbody table thead,
+#gkMainbody table tfoot {
+	width: 540px!important;
+	display: table;
+}
+
+@media only screen and (max-width: 320px), only screen and (max-device-width: 320px) and (-moz-max-device-pixel-ratio: 1.5), only screen and (max-device-width: 320px) and (-o-max-device-pixel-ratio: 1.5/1), only screen  and (max-device-width: 320px) and (-webkit-max-device-pixel-ratio: 1.5), only screen and (max-device-width: 320px) and (max-device-pixel-ratio: 1.5), only screen and (max-device-width: 640px) and (-moz-min-device-pixel-ratio: 2), only screen and (max-device-width: 640px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-device-width: 640px) and (min-device-pixel-ratio: 2) {
+	#gkMainbody table {
+		width: 260px!important;
+	}
+}
+
+@media only screen and (max-width: 480px) and (orientation:landscape), only screen and (max-device-width: 480px) and (-moz-max-device-pixel-ratio: 1.5) and (orientation:landscape), only screen and (max-device-width: 480px) and (-o-max-device-pixel-ratio: 1.5/1) and (orientation:landscape), only screen  and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 1.5) and (orientation:landscape), only screen and (max-device-width: 480px) and (max-device-pixel-ratio: 1.5) and (orientation:landscape), only screen and (max-device-width: 960px) and (-moz-min-device-pixel-ratio: 2) and (orientation:landscape), only screen and (max-device-width: 960px) and (-o-min-device-pixel-ratio: 2/1) and (orientation:landscape), only screen and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 2) and (orientation:landscape), only screen and (max-device-width: 960px) and (min-device-pixel-ratio: 2) and (orientation:landscape) {
+	#gkMainbody table {
+		width: 420px!important;
+	}
+}*/
+
+/* top/bottom modules */
+.box.gkmod-1,
+.box.gkmod-2,
+.box.gkmod-3,
+.box.gkmod-4,
+.box.gkmod-more {
+	float: left!important;	
+}
+.box.gkmod-1,
+.box.gkmod-2,
+.box.gkmod-3,
+.box.gkmod-4,
+.box.gkmod-more {
+	width: 100%!important;
+}
+.box.gkmod-more.gkmod-last-1:last-child,
+.box.gkmod-more.gkmod-last-2:last-child,
+.box.gkmod-more.gkmod-last-2:nth-last-child(2),
+#gkPageWrap .box.gkmod-more.gkmod-last-3:last-child,
+#gkPageWrap .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+#gkPageWrap .box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 100%!important;
+}
+
+/* top/bottom modules */
+body #gkPage .box {
+	margin-bottom: 20px!important;
+}
+
+/* 3-column layout */
+.gkCols3 .box.gkmod-more:nth-child(1n) {
+	clear: both;
+}
+.gkCols3 .box.gkmod-1,
+.gkCols3 .box.gkmod-2,
+.gkCols3 .box.gkmod-3,
+.gkCols3 .box.gkmod-more,
+.gkCols3 .box.gkmod-more.gkmod-last-1:last-child,
+.gkCols3 .box.gkmod-more.gkmod-last-2:last-child,
+.gkCols3 .box.gkmod-more.gkmod-last-2:nth-last-child(2) {
+	width: 100%!important;
+}
+
+/* 4-column layout */
+body .gkCols4 .box.gkmod-more:nth-child(1n) {
+	clear: both;
+}
+body .gkCols4 .box.gkmod-1,
+body .gkCols4 .box.gkmod-2,
+body .gkCols4 .box.gkmod-3,
+body .gkCols4 .box.gkmod-4,
+body .gkCols4 .box.gkmod-more,
+body .gkCols4 .box.gkmod-more.gkmod-last-1:last-child,
+body .gkCols4 .box.gkmod-more.gkmod-last-2:last-child,
+body .gkCols4 .box.gkmod-more.gkmod-last-2:nth-last-child(2),
+body .gkCols4 .box.gkmod-more.gkmod-last-3:last-child,
+body .gkCols4 .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+body .gkCols4 .box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 100%!important;
+}
+
+/* 6-column layout */
+body .gkCols6 .box.gkmod-more:nth-child(1n) { 
+	clear: both; 
+}
+body .gkCols6 .box.gkmod-1,
+body .gkCols6 .box.gkmod-2,
+body .gkCols6 .box.gkmod-3,
+body .gkCols6 .box.gkmod-4,
+body .gkCols6 .box.gkmod-more,
+body .gkCols6 .box.gkmod-5,
+body .gkCols6 .box.gkmod-more,
+body .gkCols6 .box.gkmod-6,
+body .gkCols6 .box.gkmod-more,
+body .gkCols6 .box.gkmod-more.gkmod-last-1:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-2:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-2:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-3:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-3:nth-last-child(3),
+body .gkCols6 .box.gkmod-more.gkmod-last-4:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(3),
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(4),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(3),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(4),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(5) {
+	width: 100%!important;
+}
+
+/* article fix */
+#gkContent article > time {
+	display: none!important;
+}
+#gkContent article > time + header {
+	padding-left: 0!important;
+}
+#gkContent article header li.itemDate,
+#gkContent article header li.item-date {
+	display: block;
+}
+
+/* NSP adjustments */
+.nspArtPage .nspArt {
+	border-top: 1px solid #eee!important;
+	border-left: none!important;
+	padding-bottom: 20px!important;
+	padding-top: 20px!important;
+	width: 100%!important;
+}
+.nspArtPage .nspArt:first-child {
+	border-top: none!important;
+}
+
+/* other elements */
+article header h1, 
+.category header,
+#k2storeCartPopup .componentheading,
+.k2store #k2store-checkout-content h1 {
+	line-height: 32px;
+	padding: 18px 0 0px;
+}
+
+article header h1, 
+.category header, 
+article header h2,
+#k2storeCartPopup .componentheading,
+.k2store #k2store-checkout-content h1 {
+	font-size: 24px;
+}
+
+h1,
+.k2store h1 {
+	font-size: 28px;
+}
+
+h2, 
+.componentheading,
+.category header h2,
+.k2store h2 {
+	font-size: 28px;
+}
+
+article header h2 {
+	line-height: 32px;
+}
+
+h3,
+.k2store h3 {
+	font-size: 24px;
+}
+
+h4,
+.k2store h4,
+.k2store .checkout-heading {
+	font-size: 20px;
+}
+
+h5,
+.k2store h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+#gkSocialAPI {
+	overflow: hidden;
+}
+
+.cols-2 .column-2, 
+.cols-3 .column-3 {
+	padding: 0!important;
+}
+
+.itemComments .itemCommentsList li img {
+	float: left;
+	margin-left: 0;
+	margin-right: 10px;
+	position: static;
+}
+
+.itemCommentsList li h3 {
+	float: none;
+	margin-top: 5px;
+}
+
+#gkMainbody .registration {
+	width: 100%;
+}
+
+/* NSP */
+.box.header .nspImageWrapper h4 {
+	font-size: 14px!important;
+}
+
+.nspArts,
+.nspLinksWrap {
+	clear: both;
+	float: left!important;
+	width: 100%!important;
+}
+
+/* Image Show and NSP Portal Modes */
+#gkHeaderMod {
+	overflow: hidden;
+}
+
+.gkIsWrapper-gk_storebox {
+	margin: 140px 0 0 0;
+	min-height: 120px;
+}
+
+.gkIsWrapper-gk_storebox .gkIsOverlay {
+	background-image: url('../images/header_gradient_mobile.png');
+}
+
+.gkNspPM-NewsGallery {
+	padding: 10px 0;
+}
+
+.gkNspPM-NewsGallery > a {
+	display: none;
+}
+
+.gkNspPM-ProductGallery.gkPagination {
+	padding: 0;
+}
+
+.gkNspPM-ProductGallery.gkPagination > a {
+	display: none;
+}
+
+#gkHeaderBottom .box {
+	padding: 0 6px;
+}
+
+/* Other */
+#gkPageContent {
+	padding: 0 10px!important;
+}
+
+.gkPriceTable {
+	padding: 20px 0;
+}
+
+.gkPriceTable dl {
+	margin: 20px auto!important;
+	width: 100%!important;
+}
+
+#gkFooterNav li {
+	float: none;
+}
+
+.gkPopupWrap {
+	padding: 12px;
+}
+
+#gkPopupLogin, 
+#gkPopupCart {
+	margin-left: -150px;
+	width: 300px!important;
+}
+
+#form-login-remember,
+#form-login-buttons {
+	margin-left: 0;
+}
+
+span#fb-auth {
+	clear: both;
+	display: inline-block;
+	margin: 3px 0 0 0;
+}
+
+/* K2 fixes */
+.itemTagsBlock > span {
+	display: block;
+	margin: 0 0 10px 0;
+	width: 100%;
+}
+
+.itemTagsBlock .itemTags {
+	margin: 0 0 10px 0!important;
+	overflow: hidden;
+}
+#k2Container .itemContainer{width:100%!important;}
+#k2Container .subCategoryContainer{width:100%!important;}
+#k2Container .subCategory{height:auto!important;}
+
+.itemBody.containsItemInfo, 
+.itemOtherElements.containsItemInfo,
+.itemListView .itemBlock.containsItemInfo {
+	margin-left: 0!important;
+}
+aside.itemAsideInfo {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 20px 0!important;
+	position: static!important;
+	width: 100%!important;
+}
+.itemCommentsList li > div > div > span {
+	clear: both;
+	display: block;
+}
+.itemCommentsList li > div {
+	margin-left: 0!important;
+	padding-left: 0!important;
+}
+.itemComments h3 {
+	font-size: 30px;
+	padding: 30px 0 0;
+}
+.items-row > div {
+	margin-bottom: 30px;
+	padding: 0!important;
+}
+article header h1,
+article header h2 {
+	font-size: 24px!important;
+	line-height: 1.2;
+}
+.genericView .itemView {
+	padding: 0!important;
+	width: 100%!important;
+}
+.itemAuthorDetails {
+	clear: both;
+	margin-left: 0!important;
+}
+.itemComments .itemCommentsList li > div > span > * {
+	float: left;
+}
+.itemComments .itemCommentsList li > div > span {
+	clear: both;
+	display: block;
+	float: none;
+	overflow: hidden;
+	padding: 5px 0;
+	width: 100%;
+}
+
+/* VM */
+.width50,
+.width40,
+.width33,
+.width25,
+.width20 {
+	clear: both;
+	float: none!important;
+	margin: 0 auto;
+	max-width: 240px;
+	width: 100%!important;
+}
+.productDetails .floatright,
+.productDetails .floatleft {
+	clear: both;
+	float: none!important;
+	margin: 20px 0;
+	width: 100%;
+}
+.productDetails .additional-images .floatleft {
+	clear: none;
+	float: left!important;
+	width: auto;
+}
+.row > div {
+	float: none!important;
+}
+.width50 .spacer img,
+.width40 .spacer img,
+.width33 .spacer img,
+.width25 .spacer img,
+.width20 .spacer img {
+	display: block;
+	margin: 0 auto;
+}
+.product-related-products, 
+.product-related-categories {
+	text-align: center;
+}
+.product-related-products > div, 
+.product-related-categories > div {
+	border-right: none!important;
+	margin: 0 auto;
+	float: none!important;
+	clear: both!important;
+}
+.orderby-displaynumber:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+.orderby-displaynumber .display-number {
+	clear: both;
+	float: left;
+	margin-top: 10px;
+	min-width: 150px!important;
+	text-align: left;
+}
+.vertical-separator {
+	padding: 0!important;
+}
+.row .product,
+.row .category {
+	margin-bottom: 20px!important;
+}
+.width20:nth-child(odd),
+.width25:nth-child(odd) {
+	clear: both!important;
+	padding-left: 0!important;
+	padding-right: 0px!important;	
+}
+.width20:nth-child(even),
+.width25:nth-child(even) {
+	padding-left: 0px!important;
+	padding-right: 0!important;	
+}
+
+#product-tabs,
+.gkTabsWrap ol,
+#ui-tabs ul#tabs {
+	border: 1px solid #e5e5e5;
+	margin: 20px 0 -1px;
+	overflow: hidden;
+}
+
+#product-tabs li,
+.gkTabsWrap ol li,
+#ui-tabs ul#tabs li {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: none!important;
+	border-top: 1px solid #e5e5e5!important;
+	text-align: center;
+	width: 100%;
+}
+
+#product-tabs li:first-child,
+.gkTabsWrap ol li:first-child,
+#ui-tabs ul#tabs li:first-child {
+	border-top: none!important;
+}
+
+#product-tabs li.active,
+.gkTabsWrap ol li.active,
+.gkTabsWrap ol li.active:hover,
+#ui-tabs ul#tabs li.current {
+	border: none!important;
+	border-top: 1px solid #e5e5e5!important;
+}
+#facebox {
+	max-width: 300px!important;
+}
+#facebox .popup > div > div > h4 {
+	min-width: 200px!important;
+	max-width: 300px!important;
+}
+.productdetails-view .productDetails > div {
+	float: none;
+	margin: 20px 0;
+	width: 100%;
+}

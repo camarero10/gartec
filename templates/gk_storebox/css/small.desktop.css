@@ -1,0 +1,52 @@
+/*
+#------------------------------------------------------------------------
+# Store Box - March Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+body {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+body[data-cart="true"] {
+	padding-right: 36px;
+}
+
+#gkSearch #mod-search-searchword {
+	width: 300px;
+}
+
+#gkHeaderNav {
+	padding: 42px 30px 0 30px;
+}
+
+#gkPageContent {
+	padding: 0 30px;
+}
+
+#gkFooter {
+	text-align: center;
+}
+
+#gkFooterNav,
+#gkCopyrights {
+	clear: both;
+	display: block;
+	float: none!important;
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+#gkCopyrights {
+	margin-top: 0;
+	padding: 0 0 19px 0;
+}
+
+#gkFooterNav > ul {
+	display: inline-block;
+}

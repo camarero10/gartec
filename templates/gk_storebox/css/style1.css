@@ -1,0 +1,336 @@
+/*
+#------------------------------------------------------------------------
+# Store Box - March Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+ 
+/* Style 1 */
+
+/* template.css */
+html {	
+	background: #fff url('../images/bg.png') repeat 0 0;
+}
+
+body {
+	background-image: url('../images/bg_desktop.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+@media (max-width: 720px) {
+	body {
+		background-image: url('../images/bg_tablet.jpg');
+	}
+}
+
+@media (max-width: 580px) {
+	body {
+		background-image: url('../images/bg_mobile.jpg');
+	}
+}
+
+a:hover,
+a:active,
+a:focus,
+#gkMainbody a,
+#gkMainbody h1 a:active,
+#gkMainbody h1 a:focus,
+#gkMainbody h1 a:hover,
+#gkMainbody h2 a:active,
+#gkMainbody h2 a:focus,
+#gkMainbody h2 a:hover,
+#k2Container article header h2 a:active,
+#k2Container article header h2 a:focus,
+#k2Container article header h2 a:hover,
+#gkSidebar .box a:hover {
+	color: #ff7e57;
+}
+#gkSearch #mod-search-searchword {
+	background-image: url('../images/style1/search_bg.png');
+}
+#gkTopMenu li a:active,
+#gkTopMenu li a:focus,
+#gkTopMenu li a:hover {
+	color: #ff7e57;
+}
+#gkBottom1 .box li a:active,
+#gkBottom1 .box li a:focus,
+#gkBottom1 .box li a:hover,
+#gkBottom2 .box li a:active,
+#gkBottom2 .box li a:focus,
+#gkBottom2 .box li a:hover {
+	color: #ff7e57;
+}
+#gkBreadcrumb .breadcrumbs > ul > li a:hover {
+	color: #FF7E57;	
+}
+#gkFooterNav li:hover,
+#gkFooterNav a:hover {
+	color: #ff7e57;
+}
+.box.dark a:active,
+.box.dark a:focus,
+.box.dark a:hover {
+	color: #ff7e57!important;
+}
+.gkPopupWrap a:hover {
+	color: #ff7e57;
+}
+.gkPopupWrap h3 a {
+	color: #ff7e57;
+}
+.gkPopupWrap .button,
+.gkPopupWrap .btn{ 
+	background: #ff7e57;
+}
+#btnCart {
+	background-image: url('../images/cart_shadow.png');
+}
+#btnCart > strong {
+	background-color: #ff7e57;
+	background-image: url('../images/cart_white.png');
+}
+#btnCart.loading > strong {
+	background-image: url('../images/style1/cart_loader.gif');
+}
+#btnCart.loading:hover > strong {
+	background-image: url('../images/style1/cart_loader_dark.gif');
+}
+
+/* joomla.css */
+
+button:hover,
+.button:hover,
+input.button:hover,
+span.button:hover,
+button.button:hover,
+div.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.pagenav-prev a:hover,
+.pagenav-next a:hover,
+.readon:hover,
+#gkMainbody .itemReadMore:active,
+#gkMainbody .itemReadMore:focus,
+#gkMainbody .itemReadMore:hover,
+#gkMainbody .readmore > a:active,
+#gkMainbody .readmore > a:focus,
+#gkMainbody .readmore > a:hover {
+	background: #ff7e57;
+}
+th a:active,
+th a:focus,
+th a:hover,
+article header h1 a:hover,
+article header h2 a:hover {
+	color: #FF7E57
+}
+#system-message dd.error {
+	background: #f47953
+}
+.autocompleter-queried {
+	color: #FF7E57!important
+}
+div.pager ul li a {
+	color: #FF7E57!important
+}
+.tooltip-inner strong {
+	background: #ff7e57;
+}
+article header li a:hover {
+	color: #ff7e57;
+}
+div.bannerfooter {
+	color: #ff7e57;
+}
+
+/* gk_stuff.css */
+
+.nspPagination li:hover,
+.nspPagination li.active { 
+	background-color: #ff7e57;
+}
+.nspNext,
+.nspPrev { 
+	background-image: url('../images/style1/nsp_interface.png'); 
+}
+.gkNspPM-NewsGallery .gkPrevBtn,
+.gkNspPM-NewsGallery .gkNextBtn {
+	background-image: url('../images/style1/nsp_arrows.png');
+}
+.gkNspPM-ProductGallery .gkPrevBtn,
+.gkNspPM-ProductGallery .gkNextBtn {
+	background-image: url('../images/style1/product_gallery_interface.png');
+}
+.gkNspPM-ProductGallery .gkPrice > div.PricebasePriceWithTax {
+	color: #ff7e57;
+}
+.gkNspPM-ProductGallery .gkAddToCart input.addtocart-button {
+	background-image: url('../images/style1/cart_color.png');
+	color: #ff7e57;
+}
+.gkNspPM-ProductGallery .gkImage .gkImgOverlay {
+	background: #ff7e57;
+}
+.gkNspPM-ProductGallery .gkImage .gkImgOverlay div.PricetaxAmount {
+	color: #ffe4dc;
+}
+.gkTabsWrap ol li.active,
+.gkTabsWrap ol li.active:hover {
+    color: #ff7e57;
+}
+.gkTabsWrap ol li:hover { 
+	color: #ff7e57; 
+}
+.gkIsWrapper-gk_storebox .gkIsPreloader {
+	background-image: url('../images/style1/loader.gif');
+}
+.gkPriceTable dd a:active,
+.gkPriceTable dd a:focus,
+.gkPriceTable dd a:hover,
+.gkPriceTable .gkPremium dd a:active,
+.gkPriceTable .gkPremium dd a:focus,
+.gkPriceTable .gkPremium dd a:hover {
+	background: #ff7e57;
+}
+
+/* menu.css */
+.gkMenu > ul > li.active > a {
+	color: #ff7e57;	
+}
+.gkMenu a:hover,
+.gkMenu a:active,
+.gkMenu a:focus,
+.gkMenu li.active > a {
+	color: #ff7e57;
+}
+
+/* k2.css */
+.activeCategory a {
+	color: #FF7E57;
+}
+h1 > sup,
+h2 > sup {
+	background: #FF7E57;
+}
+span#formLog {
+	background: #FF7E57;
+}
+.itemAttachmentsBlock {
+	background-color: #FF7E57; 
+	background-image: url('../images/style1/typography/tips.png');
+}
+.itemAuthorContent ul li {
+	background-image: url('../images/style1/typography/bullet1.png');
+}
+#itemListLinks li {
+	background-image: url('../images/style1/typography/bullet-square2.png');
+}
+.k2CalendarBlock table.calendar tr td.calendarDateLinked a:hover {
+	background: #FF7E57;
+}
+.k2CalendarBlock table.calendar tr td.calendarToday {
+	background: #FF7E57;
+}
+table.calendar tr td.calendarTodayLinked a {
+	color: #FF7E57;
+}
+.k2CalendarBlock table.calendar tr td.calendarTodayLinked a:hover {
+	background: #FF7E57;
+}
+.calendarNavLink { 
+	color: #FF7E57; 
+}
+
+/* vm.css */
+.category-view .category .category-overlay > span > span,
+.browse-view .product .product-overlay > span > span,
+.featured-view .product .product-overlay > span > span,
+.latest-view .product .product-overlay > span > span,
+.topten-view .product .product-overlay > span > span,
+.recent-view .product .product-overlay > span > span,
+.productDetails .main-image .product-overlay > span > span {
+	background: #ff7e57;
+}
+.catProductPrice {
+	color: #ff7e57;
+}
+.category-view .row .category .spacer h2 a:hover,
+.product-related-products > div a:hover,
+.product-related-categories > div a:hover,
+table.cart-summary a:hover,
+.gkContainer a:hover,
+#product-tabs li.active {
+	color: #ff7e57
+}
+#facebox .popup > div > div > a {
+	background: #FF7E57;
+}
+#ui-tabs h4 {
+	color: #ff7e57;
+}
+#ui-tabs ul#tabs li.current {
+	color: #ff7e57;
+}
+#ui-tabs ul#tabs li:hover {
+	color: #ff7e57;
+}
+.general-bg,
+input.vm-default,
+a.product-details,
+a.details,
+div.details {
+	color: #ff7e57;
+}
+.gkShowCart a {
+	background: #ff7e57;
+}
+.orderlistcontainer a:hover,
+.featured-view .spacer h3 a:hover,
+.latest-view .spacer h3 a:hover,
+.topten-view .spacer h3 a:hover,
+.related-products-view .spacer h3 a:hover,
+.browse-view .row .product .spacer h2 a:hover,
+h3.catProductTitle a:hover {
+	color: #ff7e57!important
+}
+.productdetails-view .product-related-products a:hover,
+.productdetails-view .product-related-categories a:hover {
+	color: #FF7E57 !important
+}
+.terms-of-service h5 a,
+.terms-of-service h5 a:visited {
+	color: #ff7e57;
+}
+.trackMyOrder {
+	background: #FEF9F7;
+}
+.vm-button-correct:hover,
+.catProductDetails:hover {
+	background: #ff7e57;
+}
+.vmCartModule dl dt a:hover {
+	color: #FF7E57;
+}
+.vmCartModule dd strong {
+	color: #FF7E57;
+}
+input.addtoCart:hover {
+	background: #ff7e57;
+}
+span.PricesalesPrice {
+	color: #ff7e57;
+}
+
+/* k2store.css */
+.k2store table#cart td.total,
+.k2store .active .gkStep {
+	color: #FF7E57;
+}
+.k2store #cart_actions .k2store_cart_button:hover, .k2store .payment .k2store_checkout_button:hover, .k2store a.begin_checkout:hover, .k2store .btn:hover, #gkMainbody .note a.button:hover, #gkMainbody .k2store .btn:hover, #gkMainbody .k2store a.btn:hover  {
+	background: #FF7E57;
+}

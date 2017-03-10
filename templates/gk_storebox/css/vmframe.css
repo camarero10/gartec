@@ -1,0 +1,229 @@
+body {
+	font-family: Arial, Verdana, sans-serif;
+	padding: 20px;
+}
+body {
+	min-height: 100%;
+	background: #fff;
+	font-size: 13px;
+	line-height: 2;
+	color: #777;
+}
+a {
+	color: #000;
+	-webkit-transition: color 0.2s linear;
+	   -moz-transition: color 0.2s linear;
+	     -o-transition: color 0.2s linear;
+	        transition: color 0.2s linear;
+	text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+	color: #ff7e57;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	color: #333;
+}
+h1,
+h2 {
+	margin: 0 0 8px;
+}
+h1 {
+	font-size: 24px;
+	line-height: 32px;
+}
+h2 {
+	font-size: 20px;
+	line-height: 28px;
+}
+h3 {
+	font-size: 135%;
+}
+h4 {
+	font-size: 110%;
+}
+h5 {
+	font-size: 100%;
+}
+ul {
+	list-style: none;
+}
+ul li {
+	line-height: 2.6;
+}
+p {
+	margin: 0.5em 0 1.5em;
+}
+
+/* Form ---------------------------------*/
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #9c9c9c;
+	height: 34px;
+	max-width: 100%!important;
+	padding: 0 15px;
+}
+
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	height: auto;
+	max-width: 100%!important;
+	padding: 14px
+}
+
+legend {
+	color: #333;
+	font-size: 22px
+}
+
+select {
+	height: inherit;
+	padding: 6px
+}
+
+html.-moz-select {
+	padding: 3px 5px
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	background: #fffef4;
+}
+
+button,
+.button,
+input.button,
+span.button,
+button.button,
+div.button,
+input[type="submit"],
+input[type="button"],
+.pagenav-prev a,
+.pagenav-next a,
+.readon,
+#gkMainbody .itemReadMore,
+#gkMainbody .readmore > a, .pagination ul li a,
+.pagination ul li span {
+	background: #000;
+	border: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 5px 2px 2px;
+	padding: 0 15px;
+	text-align: center;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out
+}
+
+button:hover,
+.button:hover,
+input.button:hover,
+span.button:hover,
+button.button:hover,
+div.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.pagenav-prev a:hover,
+.pagenav-next a:hover,
+.readon:hover,
+#gkMainbody .itemReadMore:active,
+#gkMainbody .itemReadMore:focus,
+#gkMainbody .itemReadMore:hover,
+#gkMainbody .readmore > a:active,
+#gkMainbody .readmore > a:focus,
+#gkMainbody .readmore > a:hover,
+.pagination ul li a,
+.pagination ul li span {
+	background: #f47953;
+	color: #fff
+}
+
+select[size] {
+	height: auto;
+}
+select[size="1"] {
+	height: 23px !important;
+}
+
+/* Other content */
+.product-image {
+	float: right;
+}
+textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	height: 160px;
+}
+label {
+	padding: 3px 0;
+}
+.inputs {
+	float: left;
+}
+.inputs label {
+	display: block;
+}
+.inputs label span {
+	min-width: 100px;
+	display: block;
+	line-height: 32px;
+	float: left;
+}
+.clear {
+	display: block;
+	clear: both;
+}
+.width30 {
+	width: 30%;
+}
+.width70 {
+	width: 70%;
+}
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}

@@ -1,0 +1,300 @@
+/*
+#------------------------------------------------------------------------
+# Store Box - March Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+/* Containers */
+#gkSearch #mod-search-searchword {
+	width: 200px;
+}
+
+#gkPageContent {
+	background-image: none!important;
+}
+#gkContent, 
+#gkSidebar,
+#gkContentWrap {
+	width: 100% !important;
+}
+#gkContentWrap {
+	border: none!important;
+	margin-top: 20px;
+	padding: 0!important;
+}
+#gkSidebar .box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px!important;
+}
+#gkSidebar {
+	padding: 0!important;
+}
+#gkSidebar .box:first-child {
+	padding-top: 10px!important;
+}
+#gkSidebar .box {
+	border-top: none!important;
+	float: left;
+	margin-top: 0!important;
+	margin-bottom: 30px!important;
+	width: 50%;
+}
+#gkSidebar.gkOnlyOne .box,
+#gkInset.gkOnlyOne .box {
+	width: 100%!important;
+}
+
+#gkSidebar .box:nth-child(2n+1) {
+	clear: both!important;
+}
+
+/* Limitation suffixes */
+.onlydesktop {
+	display: none!important;
+}
+.notablet {
+	display: none!important;
+}
+.nomobile {
+	display: block!important;
+}
+.onlytablet {
+	display: block!important;
+}
+.onlymobile {
+	display: none!important;
+}
+.notablet.nomobile {
+	display: none!important;
+}
+
+/* Fix for the contact page */
+.contact .contact-image {
+	float: left !important;
+}
+.contact .contact-address {
+	clear: both !important;
+	padding-top: 20px !important;
+}
+.contact .contact-form input[type="text"],
+.contact .contact-form input[type="email"],
+.contact .contact-form textarea {
+	width: 100% !important;
+}
+
+/* K2 edit popup */
+#sbox-window,
+#sbox-window iframe {
+	width: 720px!important;
+	max-width: 720px!important;
+	left: 10px!important;
+}
+
+/* menu */
+#gkMobileMenu {
+	background: transparent url('../images/tablet_menu.png') no-repeat 0 0;
+	float: right;
+	margin: -6px 5px 0 5px;
+	position: relative;
+}
+#gkExtraMenu {
+	display: none!important;
+}
+#gkMainMenu {
+	display: none;
+}
+#gkMobileMenu select {
+	width: 44px;
+	height: 44px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#gkMobileMenu {
+	clear: both;
+	display: block!important;
+	float: right;
+	font-size: 18px;
+	height: 44px;
+	line-height: 44px;
+	position: relative;
+	text-indent: -9999px;
+	width: 44px;
+}
+
+/* top/bottom modules */
+
+/* 4-column layout */
+body .gkCols4 .box {
+	margin-bottom: 30px!important;
+}
+body .gkCols4 .box.gkmod-1 {
+	width: 100%;	
+}
+body .gkCols4 .box.gkmod-2 {
+	width: 50%;
+}
+body .gkCols4 .box.gkmod-3 {
+	width: 50%;
+}
+body .gkCols4 .box.gkmod-4,
+body .gkCols4 .box.gkmod-more {
+	width: 50%;
+}
+body .gkCols4 .box:nth-child(2n+1) {
+	clear: both;
+}
+body .gkCols4 .box.gkmod-more.gkmod-last-1:last-child {
+	width: 100%!important;
+}
+body .gkCols4 .box.gkmod-more.gkmod-last-2:last-child,
+body .gkCols4 .box.gkmod-more.gkmod-last-2:nth-last-child(2) {
+	width: 50%!important;
+}
+body .gkCols4 .box.gkmod-more.gkmod-last-3:last-child,
+body .gkCols4 .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+body .gkCols4 .box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 50%!important;
+}
+
+/* 6-column layout */
+body .gkCols6 .box {
+	margin-bottom: 30px!important;
+}
+body .gkCols6 .box.gkmod-1 {
+	width: 100%;	
+}
+body .gkCols6 .box.gkmod-2 {
+	width: 50%;
+}
+body .gkCols6 .box.gkmod-3 {
+	width: 33.3%;
+}
+body .gkCols6 .box.gkmod-4,
+body .gkCols6 .box.gkmod-more {
+	width: 33.3%;
+}
+body .gkCols6 .box.gkmod-5,
+body .gkCols6 .box.gkmod-more {
+	width: 33.3%;
+}
+body .gkCols6 .box.gkmod-6,
+body .gkCols6 .box.gkmod-more {
+	width: 33.3%;
+}
+body .gkCols6 .box.gkmod-more.gkmod-last-1:last-child {
+	width: 100%!important;
+}
+body .gkCols6 .box.gkmod-more.gkmod-last-2:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-2:nth-last-child(2) {
+	width: 50%!important;
+}
+body .gkCols6 .box.gkmod-more.gkmod-last-3:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 33.3%!important;
+}
+body .gkCols6 .box.gkmod-more.gkmod-last-4:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(3),
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(4) {
+	width: 33.3%!important;
+}
+body .gkCols6 .box.gkmod-more.gkmod-last-5:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(3),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(4),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(5) {
+	width: 33.3%!important;
+}
+
+/* Suffixes and other elements */
+
+/* Page elements */
+
+#gkBottom1,
+#gkBottom2 {
+	padding: 20px 20px 35px 20px;
+}
+
+/* Image Show and NSP Portal Modes */
+.gkIsWrapper-gk_storebox {
+	margin-bottom: -150px;
+}
+
+.gkNspPM-ProductGallery .gkAddToCart,
+.gkNspPM-ProductGallery .gkImagesWrapper > div {
+	padding: 0 15px;
+}
+
+.gkNspPM-ProductGallery .gkAddToCart input.addtocart-button {
+	text-align: right;
+}
+
+.gkNspPM-ProductGallery .gkImage .gkImgOverlay {
+	height: 100px;
+	margin: -50px 0 0 -50px;
+	width: 100px;
+}
+
+.gkNspPM-ProductGallery .gkImage .gkImgOverlay div.PricebasePriceWithTax {
+	margin-top: 28px;
+}
+
+.gkNspPM-NewsBlocks > figure > figcaption h3 {
+	font-size: 21px;
+}
+
+.gkNspPM-NewsBlocks > figure > figcaption {
+	padding: 0 10px 10px 10px;
+}
+
+.gkNspPM-NewsGallery {
+	padding: 10px 24px;
+}
+
+@media (max-width: 660px) {
+    body #cc-notification h2, 
+    body #cc-notification h3, 
+    body #cc-notification p {
+        font-size: 12px!important;
+        margin-bottom:0!important;
+        width: 100%!important;
+        max-width: 100%!important;
+    }
+
+    body #cc-notification h2 span, 
+    body #cc-notification h2 {
+        font-size: 12px!important;
+    }
+
+    body #cc-notification #cc-notification-wrapper {
+        padding: 10px 32px 0!important;
+    }
+
+    body #cc-notification ul.cc-notification-buttons {
+        clear: both!important;
+        width: 100%!important;
+        position: static!important;
+        text-align: center;
+    }
+
+    body #cc-notification ul.cc-notification-buttons li {
+        float: none!important;
+        display: inline-block;
+    }
+
+    body #cc-notification a, 
+    body #cc-notification a:visited {
+        font-size: 12px!important;
+    }
+}

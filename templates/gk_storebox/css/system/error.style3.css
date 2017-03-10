@@ -1,0 +1,188 @@
+
+/*
+#------------------------------------------------------------------------
+# Store Box - March Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+html {
+	background-image: url('../../images/bg3.jpg');
+	background-repeat: repeat;
+	background-position: 0 0;
+	-webkit-font-smoothing: antialiased;
+	padding: 0;
+}
+
+body {
+	color: #777;
+	font-family: 'Roboto Condensed', Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 2;
+	min-height: 100%;
+	padding: 0 20px;
+	word-wrap: break-word
+}
+
+body,
+html {
+	margin: 0;
+	min-height: 100%;
+}
+
+a {
+	-moz-transition: background .3s cubic-bezier(.17, .67, .88, 1.25), color .2s linear;
+	-o-transition: background .3s cubic-bezier(.17, .67, .88, 1.25), color .2s linear;
+	-webkit-transition: background .3s cubic-bezier(.17, .67, .88, 1.25), color .2s linear;
+	color: #96a0d6;
+	text-decoration: none;
+	transition: background .3s cubic-bezier(.17, .67, .88, 1.25), color .2s linear
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #363636
+}
+
+h2 {
+	color: #000;
+	font-size: 52px;
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 0;
+	padding: 0
+}
+
+h2 span {
+	color: #96a0d6;
+	display: block;
+	font-size: 260px;
+	font-weight: 600
+}
+
+h3 {
+	color: #737373;
+	font-size: 14px;
+	font-weight: 300;
+	margin: 0 0 32px
+}
+
+#errorNumber {
+	float: left;
+	padding: 31px 0 0;
+	width: 39%
+}
+
+#errorboxbody {
+	border-top: 1px solid #eee;
+	padding: 24px 0 0
+}
+
+#errorboxbody a {
+	padding: 0 12px 0 0
+}
+
+#frame {
+	clear: both;
+	margin: 0;
+	overflow: hidden;
+	padding: 26px 15px 80px;
+	text-align: center
+}
+
+#gkLogo {
+	display: block;
+	height: 30px;
+	text-indent: -999em;
+	width: 154px
+}
+
+#gkLogo img {
+	display: block;
+	margin: 0
+}
+
+#gkLogo.cssLogo {
+	background: transparent url(../../images/logo.png) no-repeat 0 0;
+	height: 30px;
+	width: 154px
+}
+
+#gkLogo.text {
+	color: #000;
+	display: block;
+	font-size: 20px;
+	height: auto;
+	line-height: 20px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	text-indent: 0;
+	text-transform: uppercase
+}
+
+#gkLogo.text .gkLogoSlogan {
+	color: #000;
+	display: block;
+	font-size: 10px;
+	line-height: 10px
+}
+
+#gkLogo.text > span {
+	display: block;
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 24px;
+	padding: 0
+}
+
+#gkPage {
+	background: none repeat scroll 0 0 #FFF;
+	box-shadow: 0 0 10px rgba(0,0,0,0.12);
+	margin: 50px auto;
+	max-width: 1100px;
+	padding: 50px
+}
+
+#gkPageTop {
+	border-bottom: 1px solid #eee;
+	padding: 0 0 24px;
+	width: 100%
+}
+
+#gkPageWrap {
+	background: transparent
+}
+
+@media (max-width: 1000px) {
+	h2 {
+		font-size: 24px;
+	}
+	
+	h2 span {
+		font-size: 170px!important;
+	}
+	
+	h3 {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 720px) {
+	h2 {
+		font-size: 20px;
+	}
+	
+	h2 span {
+		font-size: 120px!important;
+	}
+	
+	h3 {
+		font-size: 12px;
+	}
+}

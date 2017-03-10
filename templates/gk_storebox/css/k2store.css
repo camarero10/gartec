@@ -1,0 +1,558 @@
+.k2store textarea, .k2store input[type="text"], .k2store input[type="password"], .k2store input[type="datetime"], .k2store input[type="datetime-local"], .k2store input[type="date"], .k2store input[type="month"], .k2store input[type="time"], .k2store input[type="week"], .k2store input[type="number"], .k2store input[type="email"], .k2store input[type="url"], .k2store input[type="search"], .k2store input[type="tel"], .k2store input[type="color"], .k2store .uneditable-input {
+	-moz-border-radius: 4px;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-border-radius: 4px;
+	-webkit-box-sizing: border-box;
+	border: 1px solid #E5E5E5;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: #9C9C9C;
+	font-size: 12px;
+	font-weight: 400;
+	height: 34px;
+	max-width: 100%!important;
+	padding: 0 15px;
+}
+.k2store .btn-primary:hover, .k2store .btn-primary:active, .k2store .btn-primary.active, .k2store .btn-primary.disabled, .k2store .btn-primary[disabled],
+.k2store input[type="submit"], .k2store input[type="reset"], .k2store input[type="button"], #gkMainbody .note a.button,
+#gkMainbody .k2store .btn, #gkMainbody .k2store a.btn {
+	-moz-border-radius: 2px;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	-webkit-border-radius: 2px;
+	-webkit-transition: all .3s ease-out;
+	background: #000;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 5px 2px 2px;
+	padding: 0 15px;
+	text-align: center;
+	transition: all .3s ease-out;
+	-webkit-text-shadow: 0 0 0 rgba(255, 255, 255, 0.75);
+	-moz-text-shadow: 0 0 0 rgba(255, 255, 255, 0.75);
+	-ms-text-shadow: 0 0 0 rgba(255, 255, 255, 0.75);
+	-o-text-shadow: 0 0 0 rgba(255, 255, 255, 0.75);
+	text-shadow: 0 0 0 rgba(255, 255, 255, 0.75);
+}
+.k2store .btn:hover {
+	background: #ff7e57;
+	color: #fff
+}
+.container-fluid.k2store .row-fluid .span6 {
+	width: 100%;
+	margin: 0;
+	clear: both;
+}
+.container-fluid.k2store .row-fluid + .row-fluid {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.container-fluid.k2store .row-fluid:first-child {
+	margin-bottom: 20px;
+}
+.k2store select[multiple], .k2store select[size] {
+	height: 39px;
+}
+#k2Container .k2store_add_to_cart {
+	display: inline-block;
+	float: right;
+}
+.k2store form {
+	margin: 20px 0 36px 0;
+	overflow: hidden;
+}
+.k2store.k2store-product-info form {
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+.price_wrap,
+.cart_wrap {
+	float: left;
+	width: 50%;
+	color: #000;
+	font-size: 28px;
+	padding: 20px 0;
+}
+.cart_wrap {
+	font-size: 
+}
+.price_wrap .product_price,
+.price_wrap .product_special_price {
+	color: #C12F3C;
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0 0 0 12px;
+}
+
+#k2Container .k2store_add_to_cart .button {
+	-moz-border-radius: 2px;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	-webkit-border-radius: 2px;
+	-webkit-transition: all .3s ease-out;
+	background: #000;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 5px 2px 2px;
+	padding: 0 15px;
+	text-align: center;
+	transition: all .3s ease-out
+}
+#k2Container .k2store_add_to_cart .button:hover {
+	background: #ff7e57;
+	color: #fff
+}
+#k2Container .k2store-notification {
+	background: none;
+	border: 0;
+	width: 100%;
+	clear: both;
+	box-shadow: none;
+	overflow: hidden;
+}
+#k2Container .k2store-notification .message {
+	line-height: 35px;
+}
+#k2Container .k2store-product-info .k2store-notification .cart_dialogue_close {
+	display: none;
+}
+.k2store .button,
+.k2store a:hover {
+	text-decoration: none;
+}
+#k2Container .k2store-notification .button {
+	text-decoration: none;
+	float: right;
+	margin-right: 15px;
+	color: #fff;
+}
+/*  set the width and height of cart images here*/
+.itemImgSmall {
+	width: 80px;
+}
+.itemImgMedium {
+	width: 100px;
+}
+.itemImgLarge {
+	width: 130px;
+}
+table#cart a div.k2storeCartRemove {
+	margin-left: 20px;
+	background: url("../images/remove-roll.png") no-repeat scroll 0 0 transparent;
+	height: 18px;
+	width: 18px;
+}
+table#cart a:hover div.k2storeCartRemove {
+	background: url("../images/remove-over.png") no-repeat scroll 0 0 transparent;
+}
+.k2store-cart-item {
+	margin-left: 10px;
+}
+table#cart .k2store-cart-item-image img {
+	float: left;
+	margin-right: 10px;
+}
+table#cart .k2store-cart-item-image + a {
+	line-height: 24px;
+}
+table#cart .k2store-cart-footer td {
+	border: 0;
+	border-bottom: 1px solid #E5E5E5; 
+}
+.k2store .table-striped tbody tr:nth-child(odd) td, .k2store .table-striped tbody tr:nth-child(odd) th {
+	background: transparent;
+}
+.k2store .table-bordered th, .k2store .table-bordered td {
+	border-left: 0;
+}
+
+.k2store .product_quantity_input input {
+	color: #888;
+	font-size: 12px;
+	font-weight: 700!important;
+	padding: 3px;
+	text-align: center;
+	width: 28px;
+}
+.k2store #cart .product_quantity_input input {
+	float: left;
+	margin-left: 15px;
+}
+.k2store .product_quantity_input > span {
+	display: none;
+}
+.pao {
+	padding: 5px;
+}
+.k2store strike {
+	color: #bbb;
+	font-size: 22px;
+}
+.k2store .product_price, .k2store .product_special_price {
+	display: inline-block;
+}
+.k2store .currency_symbol {
+	margin-right: 2px;
+}
+.k2store .checkout-heading {
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 24px;
+	font-weight: 300;
+	margin: 0 0 16px;
+	padding: 0;
+	line-height: 44px;
+	height: 44px;
+	vertical-align: top;
+	color: #000;
+}
+.k2store .checkout-heading span {
+	line-height: 44px;
+	vertical-align: top;
+}
+.k2store .checkout-heading a {
+	float: right;
+	font-weight: normal;
+	margin-top: 1px;
+	text-decoration: none;
+	cursor:pointer;
+	font-weight: 600;
+}
+.k2store .checkout-content {
+	display: none;
+	overflow: auto;
+	padding: 10px 10px 20px;
+}
+.k2store .checkout-content h2 {
+	color: #000;
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 0 0 20px;
+	padding: 0;
+}
+.k2store #k2store-checkout-content h1 {
+	margin-bottom: 50px;
+}
+.k2store #k2store-checkout-content input[type="radio"], .k2store #k2store-checkout-content input[type="checkbox"] {
+	margin: 0!important;
+}
+.k2store .checkout-content .buttons {
+	clear: both;
+}
+.k2store.checkout tr, .k2store.checkout td {
+	border-left: 0;
+	border-right: 0;
+	padding-right: 10px;
+}
+.k2store h3 {
+	color: #000;
+	line-height: 1.2;
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.k2store #cart_actions .k2store_cart_button,
+.k2store .payment .k2store_checkout_button,
+.k2store a.begin_checkout {
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	background: #222;
+	border-radius: 2px;
+	color: #FFF!important;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: 400;
+	padding: 8px 10px;
+	text-align: center;
+	margin: 0;
+	height: auto;
+	line-height: 1em;
+	border: 0;
+}
+.k2store #cart_actions .k2store_cart_button:hover,
+.k2store .payment .k2store_checkout_button:hover,
+.k2store a.begin_checkout:hover {
+	background: #FF7E57;
+	color: #FFF;
+}
+.k2store .payment .k2store_checkout_button {
+	margin-top: 15px;
+}
+#checkbox_tos {
+	margin: 10px 0 20px;
+	font-size: 90%;
+}
+.note {
+	margin: 20px 0;
+}
+.k2store #billing-existing select[size], .k2store #shipping-existing select[size] {
+	height: auto;
+}
+.k2store .options .required {
+	color: #FF0000;
+	font-weight: bold;
+}
+.k2error, div.k2error em.error, div.k2storeerror em.error, .payment_info input.error, .k2store label.error {
+	color: #ff0000;
+	font-style: italic;
+}
+div.k2error em.success, div.k2storeerror em.success, .k2store label.success {
+	color: #17B500;
+	font-style: italic;
+}
+.k2store input + label {
+	display: inline-block;
+}
+.k2store input.error {
+	border: 1px solid red;
+}
+.k2store input.valid {
+	border: 1px solid #17B500;
+}
+.k2storeCartForm1 {
+	position: relative;
+}
+.k2store-notification {
+	background: none repeat scroll 0 0 #FAFAFA;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	cursor: default;
+	margin-left: 0;
+	margin-top: -30px;
+	padding: 0 7px 20px 0;
+	position: relative;
+	width: 200px;
+	z-index: 1000;
+}
+.k2store-notification .k2success {
+	float: left;
+}
+.k2store-notification .cart_dialogue_close {
+	background: none repeat scroll 0 0 #FF0000;
+	border-radius: 10px 10px 10px 10px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	text-align: center;
+	width: 18px;
+}
+.k2store-product-info label {
+	display: inline;
+}
+.k2store-product-info .product_quantity_input {
+	float: right;
+	margin: 0 10px 0 0;
+	display: inline-block;
+}
+.product_quantity_input input {
+	width: 20px;
+}
+/* name spaced bootstrap modal */
+.modal-backdrop {
+	background-color: #000000;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1040;
+}
+.modal-backdrop.fade {
+	opacity: 0;
+}
+.modal-backdrop, .modal-backdrop.fade.in {
+	opacity: 0.8;
+}
+.k2store-modal {
+	background-clip: padding-box;
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	left: 50%;
+	margin-left: -280px;
+	outline: medium none;
+	position: fixed;
+	top: 10%;
+	width: 560px;
+	z-index: 1050;
+}
+.k2store-modal.fade {
+	top: -25%;
+	transition: opacity 0.3s linear 0s, top 0.3s ease-out 0s;
+}
+.k2store-modal.fade.in {
+	top: 10%;
+}
+.k2store-modal .modal-header {
+	border-bottom: 1px solid #EEEEEE;
+	padding: 9px 15px;
+}
+.k2store-modal .modal-header .close {
+	margin-top: 2px;
+}
+.k2store-modal .modal-header h3 {
+	line-height: 30px;
+	margin: 0;
+}
+.k2store-modal .modal-body {
+	max-height: 400px;
+	overflow-y: auto;
+	padding: 15px;
+	position: relative;
+	text-align: left;
+}
+.k2store-modal .modal-form {
+	margin-bottom: 0;
+}
+.k2store-modal .modal-footer {
+	background-color: #F5F5F5;
+	border-radius: 0 0 6px 6px;
+	border-top: 1px solid #DDDDDD;
+	box-shadow: 0 1px 0 #FFFFFF inset;
+	margin-bottom: 0;
+	padding: 14px 15px 15px;
+	text-align: right;
+}
+.k2store-modal .modal-footer:before, .k2store-modal .modal-footer:after {
+	content:"";
+	display: table;
+	line-height: 0;
+}
+.k2store-modal .modal-footer:after {
+	clear: both;
+}
+.k2store-modal .modal-footer .btn + .btn {
+	margin-bottom: 0;
+	margin-left: 5px;
+}
+.k2store-modal .modal-footer .btn-group .btn + .btn {
+	margin-left: -1px;
+}
+.k2store-modal .modal-footer .btn-block + .btn-block {
+	margin-left: 0;
+}
+.k2store_field_required {
+	float: left;
+	margin-right: 2px;
+}
+#k2store_currency a {
+	border: 1px solid #ccc;
+	display: inline-block;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	padding: 2px 4px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.k2error {
+	color: #ff0000;
+}
+.k2store .table-bordered {
+	border: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.k2store #k2store-checkout-content input[type="radio"] + label {
+	display: inline-block;
+}
+.k2store .checkout-heading a {
+	font-size: 11px;
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+.k2store .table-bordered thead:first-child tr:first-child th:first-child, .k2store .table-bordered tbody:first-child tr:first-child td:first-child,.k2store .table-bordered th,.k2store .table-bordered thead:first-child tr:first-child th:last-child, .k2store .table-bordered tbody:first-child tr:first-child td:last-child {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border: 0;
+}
+table#cart + table#cart_actions {
+	margin-top: -20px;
+}
+.k2store .table th {
+	font-weight: 300;
+}
+.k2store table#cart td.total {
+	color: #C12F3C;
+	font-weight: 600!important;
+}
+.k2store table#cart th, .k2store table#cart td {
+	padding: 10px!important;
+	vertical-align: middle;
+	font-weight: 300!important;
+	text-align: left;
+}
+.k2store table#cart th {
+	font-weight: 400!important;
+}
+
+.k2store .active .gkStep {
+	color: #FF7E57;
+}
+.k2store .done .checkout-heading {
+	color: #e5e5e5;
+}
+.k2store .gkStep {
+	vertical-align: top;
+	line-height: 44px;
+	height: 44px;
+	width: 60px;
+	float: left;
+	display:block;
+	text-align: left;
+	font-size: 22px;
+	font-weight: 600;
+}
+.k2store #payment_form_div table {
+	margin: 20px 0;
+}
+.k2store #checkout #login {
+	float: right;
+	padding: 20px;
+	width: 35%;
+	background: #F8F8F8;
+	text-align: left!important
+}
+.k2store #checkout #login a {
+	font-size: 13px;
+}
+
+#k2storeCartPopup .componentheading,
+.k2store #k2store-checkout-content h1 {
+	font-size: 48px;
+	font-weight: 400;
+	color: #000;
+	letter-spacing: -1px;
+	line-height: 1.2;
+	margin-bottom: 20px;	
+}
+.k2store h1, .k2store h2, .k2store h3, .k2store h4, .k2store h5, .k2store h6 {
+	font-weight: 400;
+}

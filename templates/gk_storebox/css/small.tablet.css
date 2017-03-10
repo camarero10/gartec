@@ -1,0 +1,156 @@
+/*
+#------------------------------------------------------------------------
+# Store Box - March Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+ 
+body[data-cart="true"] {
+	padding-right: 10px;
+} 
+
+#gkPageContent {
+	padding: 0 20px;
+}
+
+.itemsContainer .itemsContainerWrap, 
+.itemContainer .itemsContainerWrap {
+	margin: 0!important;	
+}
+#gkContentWrap > section:first-child {
+	padding-top: 20px;
+}
+#k2Container article header h2 {
+	font-size: 32px;
+	line-height: 32px;
+}
+.demo-typo-col2,
+.demo-typo-col3,
+.demo-typo-col4 {
+	clear: both;
+	float: none;
+	width: 100%;
+}
+.gkNspPM-NewsGallery .gkImagesWrapper > a { 
+	padding: 0 3px;
+}
+.gkNspPM-NewsGallery .gkImagesWrapper > a img {
+	padding: 3px;
+}
+.gkPriceTable dl {
+	padding: 20px 10px;
+}
+.gkPriceTable dt {
+	font-size: 22px;
+}
+.gkPriceTable dl.gkPremium dd.gkPrice {
+	font-size: 40px;
+}
+.gkPriceTable dl dd.gkPrice {
+	font-size: 32px;
+}
+.gkPriceTable dl.gkPremium dd {
+	padding: 5px 0;
+}
+.gkPriceTable dd a {
+	margin: 10px 0;
+	padding: 0 20px;
+}
+.gkPriceTable dl.gkPremium {
+	margin-top: -2px;
+}
+body .gkCols6 .box {
+	width: 50%!important;
+}
+body .gkCols6 .box:nth-child(2n+1) {
+	clear: both;
+}
+
+/* Image Show and NSP Portal Modes */
+.gkIsWrapper-gk_storebox {
+	margin-bottom: -110px;
+	min-height: 200px;
+}
+
+.gkIsWrapper-gk_storebox .gkIsOverlay {
+	background-image: url('../images/header_gradient_small_tablet.png');
+}
+
+.gkIsWrapper-gk_storebox figcaption h1 {
+	font-size: 30px;
+}
+
+.gkIsWrapper-gk_storebox figcaption h2 {
+	font-size: 20px;
+}
+
+.gkIsWrapper-gk_storebox .gkIsPrev, 
+.gkIsWrapper-gk_storebox .gkIsNext {
+	display: none;
+}
+
+.gkNspPM-NewsBlocks > figure {
+	margin-bottom: 0;
+	margin-top: 0;
+	width: 100%!important;
+}
+
+.gkNspPM-NewsGallery .gkImagesWrapper > a {
+	width: 50%!important;
+}
+
+.gkNspPM-NewsGallery .gkImagesWrapper.gkImagesCols1 > a {
+	width: 100%!important;
+}
+
+.gkNspPM-ProductGallery .gkImagesWrapper.gkImagesCols3 > div,
+.gkNspPM-ProductGallery .gkImagesWrapper.gkImagesCols4 > div,
+.gkNspPM-ProductGallery .gkImagesWrapper.gkImagesCols5 > div,
+.gkNspPM-ProductGallery .gkImagesWrapper.gkImagesCols6 > div,
+.gkNspPM-ProductGallery .gkImagesWrapper.gkImagesCols7 > div,
+.gkNspPM-ProductGallery .gkImagesWrapper.gkImagesCols8 > div {
+	width: 50%!important;
+}
+
+/* Top */
+#gkHeaderNav {
+	padding: 20px 20px 0 20px;
+}
+
+#btnCart {
+	background: none!important;
+	right: 10px;
+	top: 0!important;
+}
+
+#gkSearch {
+	clear: left;
+	float: left;
+	margin-top: 20px;
+}
+
+#gkSearch #mod-search-searchword {
+	background: #fff;
+}
+
+#gkMobileMenu {
+	margin-top: 44px;
+}
+
+#gkHeaderBottom .box {
+	padding: 16px 16px 0 16px;
+}
+
+/* Bottom */
+#gkBottom1,
+#gkBottom2 {
+	padding: 14px 10px 10px 10px;
+}
+
+/* VM */
+.productdetails-view h1 {
+	font-size: 32px;
+}
