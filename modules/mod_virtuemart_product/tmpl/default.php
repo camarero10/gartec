@@ -72,7 +72,6 @@ if ($products_per_row > 1) {
 	} else {
 		$last = count ($products) - 1;
 		?>
-
 		<ul class="vmproduct<?php echo $params->get ('moduleclass_sfx'); ?> productdetails">
 			<?php foreach ($products as $product) : ?>
 			<li class="product-container <?php echo $pwidth ?> <?php echo $float ?> ">

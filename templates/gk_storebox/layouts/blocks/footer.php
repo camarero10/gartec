@@ -15,21 +15,6 @@ defined('_JEXEC') or die;
      <p id="gkCopyrights">
           <?php echo $this->API->get('copyrights', ''); ?>
      </p>
-     <?php else : ?>
-     <?php
-    $app    = JFactory::getApplication();
-    $menu   = $app->getMenu();
-    $lang   = JFactory::getLanguage();
-    if ($menu->getActive() == $menu->getDefault($lang->getTag())) : 
-?>
-     <p id="gkCopyrights">
-          Joomla Template designed by
-          <a href="https://www.gavick.com/joomla-templates" title="Joomla template designed by GavickPro" rel="nofollow">GavickPro</a>
-     </p>
-     <?php else : ?>
-     <p id="gkCopyrights">
-          Joomla Templates designed by GavickPro
-     </p>
-     <?php endif; ?>
+    
      <?php endif; ?>
 </footer>

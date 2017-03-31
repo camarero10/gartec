@@ -85,6 +85,7 @@ class NSP_GK5_News_Gallery {
 		}
 		// closing main wrapper
 		echo '</div>';
+
 	}
 	// function used to retrieve the item URL
 	function get_link($num) {

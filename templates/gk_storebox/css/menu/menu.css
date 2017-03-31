@@ -54,6 +54,8 @@
 }
 .gkMenu .childcontent .childcontent {
 	border: 1px solid #222;
+	background:#0a3571 !important;
+	display: block;
 }
 .gkMenu > ul > li > .childcontent .gkcol {
 	float: left;
@@ -106,7 +108,7 @@
 	color: #fff;
 }
 .gkMenu > ul li div.childcontent {
-	background: #000;
+	background:#194A8F;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -125,7 +127,7 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	padding: 0 20px;
+	padding: 20px;
 }
 .gkMenu > ul li div.childcontent li {
 	-webkit-box-sizing: border-box;
@@ -158,9 +160,12 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	color: #929292;
+	color: rgba(255,255,255,0.7);
 	display: block;
-	padding: 4px 0; 
+	padding: 4px 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
 }
 .gkMenu > ul li li div.childcontent small {
 	color: #aaa;
@@ -184,10 +189,11 @@
 }
 .gkMenu > ul li div.childcontent header a {
 	color: #fff;
-	font-size: 13px;
+	font-size: 15px;
 	line-height: 24px;
 	padding: 8px 0 4px;
 	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
 }
 .gkMenu > ul li div.childcontent header small {
 	display: block;

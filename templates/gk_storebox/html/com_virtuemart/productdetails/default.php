@@ -62,7 +62,7 @@ if(vRequest::getInt('print',false)){ ?>
     <?php endif; // Product Navigation END ?>
 
 	<div class="productDetails">
-	    <div>
+	    <div class="img-productDetails">
 	    	<?php 
 	    		echo $this->loadTemplate('images');
 	    	
@@ -72,7 +72,7 @@ if(vRequest::getInt('print',false)){ ?>
 	    		}
 	    	?>
 	   	</div>
-	   	<div>
+	   	<div class="text-productDetails">
 		    <h1 itemprop="name"><?php echo $this->product->product_name ?></h1>
 	    	<?php echo $this->product->event->afterDisplayTitle ?>
 	

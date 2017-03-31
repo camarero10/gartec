@@ -17,31 +17,13 @@ $verticalseparator = " vertical-separator";
 <div class="category-view box bigtitle">
 
     <h3 class="header"><span><?php echo JText::_('COM_VIRTUEMART_CATEGORIES') ?></span></h3>
-
+	<div class="row">
     <?php
     // Start the Output
     foreach ($this->categories as $category) {
 
-	// Show the horizontal seperator
-	if ($iCol == 1 && $iCategory > $categories_per_row) {
-	    ?>
-	    <div class="horizontal-separator"></div>
-	<?php
-	}
-
-	// this is an indicator wether a row needs to be opened or not
-	if ($iCol == 1) {
-	    ?>
-	    <div class="row">
-	    <?php
-	    }
-
-	    // Show the vertical seperator
-	    if ($iCategory == $categories_per_row or $iCategory % $categories_per_row == 0) {
-		$show_vertical_separator = ' ';
-	    } else {
 		$show_vertical_separator = $verticalseparator;
-	    }
+
 
 	    // Category Link
 	    $caturl = JRoute::_('index.php?option=com_virtuemart&view=category&virtuemart_category_id=' . $category->virtuemart_category_id, FALSE);
@@ -66,25 +48,9 @@ $verticalseparator = " vertical-separator";
     	    </div>
     	</div>
 	<?php
-	$iCategory++;
 
-	// Do we need to close the current row now?
-	if ($iCol == $categories_per_row) {
-	    ?>
-		<div class="clear"></div>
-	    </div>
-	<?php
-	$iCol = 1;
-    } else {
-	$iCol++;
-    }
-}
-// Do we need a final closing row tag?
-if ($iCol != 1) {
-    ?>
-        <div class="clear"></div>
-    </div>
-    <?php
-}
+	}
+
 ?>
+		</div>
 </div>

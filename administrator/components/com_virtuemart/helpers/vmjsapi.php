@@ -352,6 +352,8 @@ class vmJsApi{
 				//This is necessary though and should not be removed without rethinking the whole construction
 				$v .= "usefancy = false;";
 			}
+			
+			
 			vmJsApi::addJScript('vm.vars',$v,false,true,true);
 			$e = false;
 		}

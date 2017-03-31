@@ -118,6 +118,9 @@
 		<position>tab8</position>
 		<position>tab9</position>
 		<position>tab10</position>
+
+		<position>custom_text</position>
+		<position>custom_img</position>
 	</positions>
 	<languages folder="language">
 		<language tag="en-GB">en-GB.tpl_gk_storebox.ini</language>

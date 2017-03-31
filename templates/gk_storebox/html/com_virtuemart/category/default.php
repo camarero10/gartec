@@ -34,6 +34,7 @@ $js = "jQuery(document).ready(function () {
 $document = JFactory::getDocument(); 
 $document->addScriptDeclaration($js);
 //var_dump($this->category);
+
 ?>
 
 <?php
@@ -51,24 +52,12 @@ if ( VmConfig::get('showCategory',1) and empty($this->keyword)) :
 		$verticalseparator = " vertical-separator";
 	?>
 	<div class="category-view">
+		<div class="row">
 		<?php // Start the Output
 		if(!empty($this->category->children)) :
-			foreach ( $this->category->children as $category ) : ?>
-				<?php if ($iCol == 1 && $iCategory > $categories_per_row) : ?>
-				<div class="horizontal-separator"></div>
-				<?php endif; ?>
-				
-				<?php if ($iCol == 1) : ?>
-				<div class="row">
-				<?php endif; ?>
-				
-				<?php
-					// Show the vertical seperator
-					if ($iCategory == $categories_per_row or $iCategory % $categories_per_row == 0) {
-						$show_vertical_separator = ' ';
-					} else {
-						$show_vertical_separator = $verticalseparator;
-					}
+			foreach ( $this->category->children as $category ) :
+
+				$show_vertical_separator = $verticalseparator;
 		
 					// Category Link
 					$caturl = JRoute::_ ( 'index.php?option=com_virtuemart&view=category&virtuemart_category_id=' . $category->virtuemart_category_id );
@@ -84,24 +73,12 @@ if ( VmConfig::get('showCategory',1) and empty($this->keyword)) :
 							</div><!-- .spacer -->
 						</div><!-- .category -->
 						<?php
-					$iCategory ++;
-		
-				// Do we need to close the current row now?
-				if ($iCol == $categories_per_row) : ?>
-					<div class="clear"></div>
-				</div><!-- .row -->
-				<?php
-					$iCol = 1;
-				else :
-					$iCol ++;
-				endif;
+
 			endforeach;
 		endif;
 		// Do we need a final closing row tag?
-		if ($iCol != 1) : ?>
-			<div class="clear"></div>
-		</div><!-- .row -->
-		<?php endif; ?>
+		 ?>
+			</div>
 	</div><!-- .category-view -->
 <?php 
 	endif;
@@ -147,24 +124,11 @@ endif;
 				</div>
 				<?php endif ?>
 		</form>
+		<div class="row">
 		<?php // Start the Output
 		foreach ( $this->products as $product ) :
-			// Show the horizontal seperator
-			if ($iBrowseCol == 1 && $iBrowseProduct > $BrowseProducts_per_row) : ?>
-			<div class="horizontal-separator"></div>
-			<?php endif;
-	
-			// this is an indicator wether a row needs to be opened or not
-			if ($iBrowseCol == 1) : ?>
-			<div class="row">
-			<?php endif;
-	
-				// Show the vertical seperator
-				if ($iBrowseProduct == $BrowseProducts_per_row or $iBrowseProduct % $BrowseProducts_per_row == 0) {
-					$show_vertical_separator = ' ';
-				} else {
-					$show_vertical_separator = $verticalseparator;
-				}
+		$show_vertical_separator = $verticalseparator;
+
 				// Show Products ?>
 				<div class="product floatleft<?php echo $Browsecellwidth . $show_vertical_separator ?>">
 					<div class="spacer">
@@ -199,23 +163,9 @@ endif;
 					</div><!-- .spacer -->
 				</div><!-- .product -->
 			<?php
-		
-			// Do we need to close the current row now?
-			if ($iBrowseCol == $BrowseProducts_per_row || (isset($BrowseTotalProducts) && $iBrowseProduct == $BrowseTotalProducts)) : ?>
-				</div><!-- .row -->
-				<?php
-				$iBrowseCol = 1;
-			else :
-				$iBrowseCol++;
-			endif;
-		
-			$iBrowseProduct++;
-		endforeach;
-		// Do we need a final closing row tag?
-		if ($iBrowseCol != 1) : ?>
-			<div class="clear"></div>
-		</div><!-- .row -->
-		<?php endif; ?>
+
+		endforeach; ?>
+		</div>
 	
 		<?php if($this->vmPagination->getPagesLinks() != '') : ?>
 		<div class="pagination"> 

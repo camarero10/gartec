@@ -10,7 +10,6 @@
  
 /* Base elements and classes */
 html {
-	border-bottom: 1px solid transparent;
 	min-height: 100%;
 }
 body > div > footer,

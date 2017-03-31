@@ -125,6 +125,18 @@ if($gkContentClass != '') {
 		    		<jdoc:include type="modules" name="header_bottom" style="<?php echo $this->module_styles['header_bottom']; ?>" />
 		    	</div>
 		    	<?php endif; ?>
+
+				<?php if($this->API->modules('custom_text')) : ?>
+					<div id="custom_text">
+						<jdoc:include type="modules" name="custom_text" style="<?php echo $this->module_styles['title']; ?>"/>
+					</div>
+				<?php endif; ?>
+
+				<?php if($this->API->modules('custom_img')) : ?>
+					<div id="custom_img">
+						<jdoc:include type="modules" name="custom_img" style="<?php echo $this->module_styles['title']; ?>"/>
+					</div>
+				<?php endif; ?>
 		    	
 		    	<section id="gkContent"<?php echo $gkContentClass; ?>>					
 					

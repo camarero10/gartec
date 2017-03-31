@@ -1016,7 +1016,7 @@ legend.hidelabeltxt,
 .filters .hidelabeltxt,
 .contact .jicons-icons,
 #system-message dt {
-	display: none
+	display: block;
 }
 
 li.print-icon a,
@@ -1055,7 +1055,7 @@ section article {
 
 section img {
 	height: auto;
-	max-width: 100%;
+	max-width: 101%;
 }
 
 section.blog .items-more h3 {

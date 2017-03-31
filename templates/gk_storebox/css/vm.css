@@ -2259,6 +2259,7 @@ script[id^="vm"] + h2 {
 }
 #fancybox-content .showcart {
 	right: 0;
+	font-family: 'Open Sans', sans-serif;
 }
 #fancybox-content .continue_link {	
 	left: 10px;
@@ -2267,4 +2268,5 @@ script[id^="vm"] + h2 {
 }
 #fancybox-content .continue_link {
 	left: 0;
+	font-family: 'Open Sans', sans-serif;
 }

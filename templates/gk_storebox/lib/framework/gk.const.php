@@ -33,7 +33,8 @@ $GK_TEMPLATE_MODULE_STYLES = array(
 	'top2' => 'gk_style',
 	'bottom1' => 'gk_style',
 	'bottom2' => 'gk_style',
-	'social' => 'none'
+	'social' => 'none',
+	'title' => 'gk_title'
 );
 
 // EOF

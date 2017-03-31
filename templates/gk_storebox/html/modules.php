@@ -108,9 +108,9 @@ function modChrome_gk_style($module, $params, $attribs) {
 		
 		if($module->showtitle) {	
 			if($params->get('module_link_switch')) {
-				echo '<h'.$header_type.' class="header"><a href="'. $params->get('module_link') .'">'. preg_replace(array('/__(.*?)__/i', '/\*\*(.*?)\*\*/i'), array('<em>${1}</em>', '<strong>${1}</strong>'), $module->title) .'</a></h'.$header_type.'>';
+				echo '<h'.$header_type.' class="header"><a href="'. $params->get('module_link') .'">'. preg_replace(array('/__(.*?)__/i', '/\*\*(.*?)\*\*/i'), array('<em>${1}</em>', '<span>${1}</span>'), $module->title) .'</a></h'.$header_type.'>';
 			} else {
-				echo '<h'.$header_type.' class="header">'. preg_replace(array('/__(.*?)__/i', '/\*\*(.*?)\*\*/i'), array('<em>${1}</em>', '<strong>${1}</strong>'), $module->title) .'</h'.$header_type.'>';
+				echo '<h'.$header_type.' class="header">'. preg_replace(array('/__(.*?)__/i', '/\*\*(.*?)\*\*/i'), array('<em>${1}</em>', '<span>${1}</span>'), $module->title) .'</h'.$header_type.'>';
 			}
 		}
 	
@@ -122,6 +122,24 @@ function modChrome_gk_style($module, $params, $attribs) {
 		
 		echo '</div>';
  	}
+
+
 }
 
+function modChrome_gk_title($module, $params, $attribs) {
+
+	echo '<div class="box ' . $params->get('moduleclass_sfx').'">';
+
+	if($module->showtitle) {
+		echo '<span><h3 class="header">'. preg_replace(array('/__(.*?)__/i', '/\*\*(.*?)\*\*/i'), array('<em>${1}</em>', '<span>${1}</span>'), $module->title) .'</h3></span>';
+	}
+
+	echo '<div class="content">';
+
+	echo $module->content;
+
+	echo '</div>';
+
+	echo '</div>';
+}
 // EOF

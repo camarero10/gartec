@@ -19,26 +19,11 @@ $productTitle = JText::_('COM_VIRTUEMART_'.$type.'_PRODUCT');
 
 <div class="<?php echo $type ?>-view box bigtitle">
  <h3 class="header"><span><?php echo $productTitle ?></span></h3>
-	
+	<div class="row">
 	<?php // Start the Output
 foreach ( $productList as $product ) {
 
-	// Show the horizontal seperator
-	if ($col == 1 && $nb > $products_per_row) { ?>
-	<div class="horizontal-separator"></div>
-	<?php }
-
-	// this is an indicator wether a row needs to be opened or not
-	if ($col == 1) { ?>
-	<div class="row">
-		<?php }
-
-	// Show the vertical seperator
-	if ($nb == $products_per_row or $nb % $products_per_row == 0) {
-		$show_vertical_separator = ' ';
-	} else {
-		$show_vertical_separator = $verticalseparator;
-	}
+	$show_vertical_separator = $verticalseparator;
 
 		// Show Products ?>
 		<div class="product floatleft<?php echo $cellwidth . $show_vertical_separator ?>">
@@ -57,24 +42,10 @@ foreach ( $productList as $product ) {
 			</div>
 		</div>
 		<?php
-	$nb ++;
 
-	// Do we need to close the current row now?
-	if ($col == $products_per_row) { ?>
-	</div>
-	<?php
-		$col = 1;
-	} else {
-		$col ++;
-	}
 }
-// Do we need a final closing row tag?
-if ($col != 1) { ?>
-	<div class="clear"></div>
-</div>
-<?php
-}
-?>
+
+?> </div>
 </div>
 <?php } 
 

@@ -39,26 +39,11 @@ $horizontalSeparator = '<div class="horizontal-separator"></div>';
 if (!empty($this->manufacturers)) { ?>
 
 <div class="manufacturer-view-default">
-
+	<div class="row">
 	<?php // Start the Output
 	foreach ( $this->manufacturers as $manufacturer ) {
+		$showVerticalSeparator = $verticalSeparator;
 
-		// Show the horizontal seperator
-		if ($iColumn == 1 && $iManufacturer > $manufacturerPerRow) {
-			echo $horizontalSeparator;
-		}
-
-		// this is an indicator wether a row needs to be opened or not
-		if ($iColumn == 1) { ?>
-		<div class="row">
-		<?php }
-
-		// Show the vertical seperator
-		if ($iManufacturer == $manufacturerPerRow or $iManufacturer % $manufacturerPerRow == 0) {
-			$showVerticalSeparator = ' ';
-		} else {
-			$showVerticalSeparator = $verticalSeparator;
-		}
 
 		// Manufacturer Elements
 		$manufacturerURL = JRoute::_('index.php?option=com_virtuemart&view=manufacturer&virtuemart_manufacturer_id=' . $manufacturer->virtuemart_manufacturer_id, FALSE);
@@ -76,23 +61,10 @@ if (!empty($this->manufacturers)) { ?>
 			</div>
 		</div>
 		<?php
-		$iManufacturer ++;
 
-		// Do we need to close the current row now?
-		if ($iColumn == $manufacturerPerRow) {
-			echo '<div class="clear"></div></div>';
-			$iColumn = 1;
-		} else {
-			$iColumn ++;
-		}
 	}
-
-	// Do we need a final closing row tag?
-	if ($iColumn != 1) { ?>
-		<div class="clear"></div>
-	</div>
-	<?php } ?>
-
+ ?>
+</div>
 </div>
 <?php
 }
