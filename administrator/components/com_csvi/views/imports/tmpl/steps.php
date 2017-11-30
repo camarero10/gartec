@@ -1,0 +1,36 @@
+<?php
+/**
+ * Import page
+ *
+ * @author 		Roland Dalmulder
+ * @link 		http://www.csvimproved.com
+ * @copyright 	Copyright (C) 2006 - 2015 RolandD Cyber Produksi. All rights reserved.
+ * @license 	GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * @version 	$Id: default.php 2436 2013-05-25 13:14:20Z Roland $
+ */
+
+defined('_JEXEC') or die;
+
+?>
+<ul class="nav nav-list">
+	<?php
+	for ($i = 1; $i < 5; $i++)
+	{
+		if ($this->step == $i)
+		{
+			$active = 'active-step';
+			$arrow = '<i class="icon-chevron-right"></i>';
+		}
+		else
+		{
+			$active = 'inactive-step';
+			$arrow = '';
+		}
+
+		?>
+			<li class="<?php echo $active; ?>"><?php echo $arrow; echo JText::_('COM_CSVI_IMPORT_STEP' . $i); ?></li>
+		<?php
+	}
+
+	?>
+</ul>

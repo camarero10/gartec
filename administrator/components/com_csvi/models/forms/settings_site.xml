@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="jform">
+		<fieldset name="site">
+			<field
+				name="hostname"
+				type="text"
+				default=""
+				required="true"
+				class="required" />
+		</fieldset>
+	</fields>
+</form>

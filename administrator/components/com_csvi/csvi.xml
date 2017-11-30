@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>CSVI</name>
+	<creationDate>17 December 2015</creationDate>
+	<author>RolandD Cyber Produksi</author>
+	<authorEmail>contact@csvimproved.com</authorEmail>
+	<authorUrl>http://www.csvimproved.com/</authorUrl>
+	<copyright>Copyright (C) 2006 - 2015 RolandD Cyber Produksi. All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>6.4.3</version>
+	<description>COM_CSVI_XML_DESCRIPTION</description>
+
+	  <!-- Front-end files -->
+	<files folder="site">
+		<filename>csvi.php</filename>
+		<folder>controllers</folder>
+		<folder>language</folder>
+		<folder>views</folder>
+	</files>
+
+	<!-- Scripts to run on installation -->
+	<scriptfile>script.php</scriptfile>
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install/mysql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<administration>
+		<!-- Menu entries -->
+		<menu view="csvi">COM_CSVI</menu>
+
+		<!-- Core files -->
+		<files folder="admin">
+			<filename>changelog.txt</filename>
+			<filename>config.xml</filename>
+			<filename>csvi.php</filename>
+			<filename>controller.php</filename>
+			<filename>dispatcher.php</filename>
+			<filename>gpl-3.0.txt</filename>
+			<filename>toolbar.php</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helper</folder>
+			<folder>language</folder>
+			<folder>layouts</folder>
+			<folder>models</folder>
+			<folder>rantai</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+
+	<updateservers>
+	   <server type="extension" priority="1" name="CSVI Pro">http://www.csvimproved.com/updates/csvipro.xml</server>
+	</updateservers>
+</extension>

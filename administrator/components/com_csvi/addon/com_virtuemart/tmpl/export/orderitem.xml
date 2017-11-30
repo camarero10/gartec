@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="jform">
+		<fieldset name="orderitem">
+			<field name="orderitemnostart"
+				   type="text"
+				   class="input-small" />
+
+			<field name="orderitemnoend"
+				   type="text"
+				   class="input-small" />
+
+			<field name="orderitemlist"
+				   type="text"
+				   class="input-xxlarge" />
+
+			<field name="orderitemdaterange"
+				   type="list"
+				   translate="true"
+				   multiple="false"
+				   class="advancedSelect"
+				   default="">
+				<option value="">COM_CSVI_DONT_USE</option>
+				<option value="lastrun">COM_CSVI_DATE_LASTRUN</option>
+				<option value="yesterday">COM_CSVI_DATE_YESTERDAY</option>
+				<option value="thisweek">COM_CSVI_DATE_THIS_WEEK</option>
+				<option value="lastweek">COM_CSVI_DATE_LAST_WEEK</option>
+				<option value="thismonth">COM_CSVI_DATE_THIS_MONTH</option>
+				<option value="lastmonth">COM_CSVI_DATE_LAST_MONTH</option>
+				<option value="thisquarter">COM_CSVI_DATE_THIS_QUARTER</option>
+				<option value="lastquarter">COM_CSVI_DATE_LAST_QUARTER</option>
+				<option value="thisyear">COM_CSVI_DATE_THIS_YEAR</option>
+				<option value="lastyear">COM_CSVI_DATE_LAST_YEAR</option>
+			</field>
+
+			<field name="orderitemdatestart"
+				   type="csvicalendar"
+				   format="%d-%m-%Y %H:%M:%S"
+				   class="input-medium" />
+
+			<field name="orderitemdateend"
+				   type="csvicalendar"
+				   format="%d-%m-%Y %H:%M:%S"
+				   class="input-medium" />
+
+			<field name="orderitemmdatestart"
+				   type="csvicalendar"
+				   format="%d-%m-%Y %H:%M:%S"
+				   class="input-medium" />
+
+			<field name="orderitemmdateend"
+				   type="csvicalendar"
+				   format="%d-%m-%Y %H:%M:%S"
+				   class="input-medium" />
+
+			<field name="orderitemstatus"
+				   type="sql"
+					query="SELECT order_status_code AS value, order_status_name AS text FROM #__virtuemart_orderstates ORDER BY ordering"
+					key_field="value"
+					value_field="text"
+					translate="true"
+					multiple="true"
+					size="7"
+					class="advancedSelect"
+					default="">
+				<option value="">COM_CSVI_DONT_USE</option>
+			</field>
+
+			<field name="orderitemcurrency"
+				   type="sql"
+					query="SELECT order_currency AS value, currency_name AS text
+						FROM #__virtuemart_orders o, #__virtuemart_currencies c
+						WHERE o.order_currency = c.virtuemart_currency_id
+						GROUP BY currency_name
+						ORDER BY currency_name"
+					key_field="value"
+					value_field="text"
+					translate="false"
+					multiple="true"
+					class="advancedSelect"
+					default="">
+				<option value="">COM_CSVI_DONT_USE</option>
+			</field>
+
+			<field name="orderitempricestart"
+				   type="text"
+				   class="input-medium" />
+
+			<field name="orderitempriceend"
+				   type="text"
+				   class="input-medium" />
+
+			<field name="orderproduct"
+				   type="CsviVirtuemartOrderItemProduct"
+					size="7"
+					default=""
+					class="advancedSelect"
+					multiple="true">
+				<option value="">COM_CSVI_DONT_USE</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

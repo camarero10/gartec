@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset
+		name="basic_configuration"
+		class="span6"
+	>
+		<field name="task_name"
+			type="text"
+			required="true"
+			class="inputbox" />
+
+		<field name="action"
+			type="list"
+			size="1"
+			required="true"
+			class="advancedSelect">
+			<option value="import">COM_CSVI_IMPORT</option>
+			<option value="export">COM_CSVI_EXPORT</option>
+		</field>
+
+		<field name="component"
+			type="text"
+			required="true"
+			class="inputbox" />
+
+		 <field name="options"
+			type="text"
+			required="true"
+			class="input-xxlarge" />
+
+		<field name="url"
+			type="url"
+			required="false"
+			class="input-xxlarge" />
+
+		<field name="enabled"
+			   type="radio"
+			   size="1"
+			   required="false"
+			   class="btn-group btn-group-yesno"
+			   default="1">
+			<option value="1">COM_CSVI_YES</option>
+			<option value="0">COM_CSVI_NO</option>
+		</field>
+
+		<field name="ordering" type="text" label="JFIELD_ORDERING_LABEL"
+			description="JFIELD_ORDERING_DESC" class="inputbox" size="6"
+			default="0" />
+	</fieldset>
+</form>

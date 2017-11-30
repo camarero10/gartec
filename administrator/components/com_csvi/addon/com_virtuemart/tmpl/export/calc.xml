@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="jform">
+		<fieldset name="general">
+			<field name="language"
+				type="CsviVirtuemartLanguage"
+				size="1" />
+
+			<field name="category_separator"
+				type="text"
+				size="2"
+				class="input-mini"
+				default="/" />
+		</fieldset>
+	</fields>
+</form>

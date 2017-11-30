@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="jform">
+		<fieldset name="yandex">
+			<field
+				name="ya_name"
+				type="text"
+				default="" />
+			<field
+				name="ya_company"
+				type="text"
+				default="" />
+			<field
+				name="ya_link"
+				type="text"
+				default="" />
+			<field
+				name="ya_delivery_cost"
+				type="text"
+				default="" />
+			<field
+				name="ya_currency"
+				type="text"
+				default="RUR" />
+			<field
+				name="ya_currency_rate"
+				type="text"
+				default="1" />
+			<field
+				name="ya_currency_plus"
+				type="text"
+				default="0" />
+		</fieldset>
+	</fields>
+</form>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="jform">
+		<fieldset name="file">
+			<field name="source"
+				type="list"
+				size="1"
+				default="fromupload"
+				class="advancedSelect"
+				onchange="Csvi.showImportSource(this.value)">
+					<option value="fromupload">COM_CSVI_IMPORT_UPLOAD_FILE_LABEL</option>
+					<option value="fromserver">COM_CSVI_IMPORT_FROM_SERVER_LABEL</option>
+					<option value="fromurl">COM_CSVI_IMPORT_FROM_URL_LABEL</option>
+					<option value="fromftp">COM_CSVI_IMPORT_FROM_FTP_LABEL</option>
+			</field>
+
+			<field name="local_csv_file"
+				type="csvitext"
+				class="importserver input-xxlarge"
+				localpath="1"/>
+
+			<field name="delete_file"
+					type="list"
+					class="importserver advancedSelect input-small"
+					advancedUser="1"
+					default="0">
+				<option value="0" class="radiobtn">JNO</option>
+				<option value="1" class="radiobtn">JYES</option>
+			</field>
+
+			<field name="urlfile"
+				type="text"
+				class="importurl input-xxlarge" />
+		</fieldset>
+		<fieldset name="ftpfield">
+			<field name="ftphost"
+				type="text"
+				class="input-xxlarge" />
+
+			<field name="ftpport"
+				type="text"
+				class="input-mini" />
+
+			<field name="ftpusername"
+				type="text" />
+
+			<field name="ftppass"
+				type="password" />
+
+			<field name="ftproot"
+				type="text"
+				class="input-xxlarge" />
+
+			<field name="ftpfile"
+				type="text"
+				class="input-xxlarge" />
+
+			<field name="testftp"
+				type="button"
+				onclick="Csvi.testFtp('export'); return false;"
+				text="COM_CSVI_TESTFTP_BUTTON"
+				emptylabel="1"
+				emptydescription="1" />
+		</fieldset>
+	</fields>
+</form>

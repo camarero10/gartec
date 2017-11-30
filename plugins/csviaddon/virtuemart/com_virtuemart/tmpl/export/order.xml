@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="jform">
+		<fieldset name="general">
+			<field name="language"
+				type="CsviVirtuemartLanguage"
+				class="advancedSelect"
+				size="1" />
+
+			<field name="splitorderline"
+				type="list"
+				size="1"
+				class="input-small advancedSelect"
+				advancedUser="1"
+				default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>
+		<fieldset name="order">
+			<field name="ordernostart"
+				type="text"
+				class="input-small" />
+
+			<field name="ordernoend"
+				type="text"
+				class="input-small" />
+
+			<field name="orderlist"
+				type="text"
+				class="input-xxlarge" />
+
+			<field name="orderdaterange"
+				type="list"
+				translate="true"
+				multiple="false"
+				class="advancedSelect"
+				default="">
+				<option value="">COM_CSVI_DONT_USE</option>
+				<option value="lastrun">COM_CSVI_DATE_LASTRUN</option>
+				<option value="yesterday">COM_CSVI_DATE_YESTERDAY</option>
+				<option value="thisweek">COM_CSVI_DATE_THIS_WEEK</option>
+				<option value="lastweek">COM_CSVI_DATE_LAST_WEEK</option>
+				<option value="thismonth">COM_CSVI_DATE_THIS_MONTH</option>
+				<option value="lastmonth">COM_CSVI_DATE_LAST_MONTH</option>
+				<option value="thisquarter">COM_CSVI_DATE_THIS_QUARTER</option>
+				<option value="lastquarter">COM_CSVI_DATE_LAST_QUARTER</option>
+				<option value="thisyear">COM_CSVI_DATE_THIS_YEAR</option>
+				<option value="lastyear">COM_CSVI_DATE_LAST_YEAR</option>
+			</field>
+
+			<field name="orderdatestart"
+				type="csvicalendar"
+				format="%d-%m-%Y %H:%M:%S"
+				class="input-medium" />
+
+			<field name="orderdateend"
+				type="csvicalendar"
+				format="%d-%m-%Y %H:%M:%S"
+				class="input-medium" />
+
+			<field name="ordermdatestart"
+				type="csvicalendar"
+				format="%d-%m-%Y %H:%M:%S"
+				class="input-medium" />
+
+			<field name="ordermdateend"
+				type="csvicalendar"
+				format="%d-%m-%Y %H:%M:%S"
+				class="input-medium" />
+
+			<field name="orderstatus"
+				type="sql"
+				query="SELECT order_status_code AS value, order_status_name AS text FROM #__virtuemart_orderstates ORDER BY ordering"
+				key_field="value"
+				value_field="text"
+				translate="true"
+				multiple="true"
+				size="7"
+				class="input-xxlarge advancedSelect"
+				default="">
+			</field>
+
+			<field name="orderpayment"
+				type="CsviVirtuemartOrderPayment"
+				translate="false"
+				multiple="true"
+				class="advancedSelect"
+				default="">
+				<option value="">COM_CSVI_DONT_USE</option>
+			</field>
+
+			<field name="order_address"
+				type="list"
+				size="1"
+				class="advancedSelect"
+				default="">
+				<option value="">COM_CSVI_DONT_USE</option>
+				<option value="BT">COM_CSVI_BILLING_ADDRESS</option>
+				<option value="ST">COM_CSVI_SHIPPING_ADDRESS</option>
+				<option value="BTST">COM_CSVI_BILLING_SHIPPING_ADDRESS</option>
+			</field>
+
+			<field name="ordermanufacturer"
+				type="CsviVirtuemartManufacturer"
+				translate="false"
+				multiple="true"
+				class="advancedSelect"
+				default="none">
+				<option value="none">COM_CSVI_ALL_MANUFACTURERS</option>
+			</field>
+
+			<field name="ordercurrency"
+				type="sql"
+				query="SELECT order_currency AS value, currency_name AS text
+					FROM #__virtuemart_orders o, #__virtuemart_currencies c
+					WHERE o.order_currency = c.virtuemart_currency_id
+					GROUP BY currency_name
+					ORDER BY currency_name"
+				key_field="value"
+				value_field="text"
+				translate="false"
+				multiple="true"
+				class="advancedSelect"
+				default="">
+				<option value="">COM_CSVI_DONT_USE</option>
+			</field>
+
+			<field name="orderpricestart"
+				type="text"
+				class="input-mini" />
+
+			<field name="orderpriceend"
+				type="text"
+				class="input-mini" />
+
+			<field name="orderuser"
+				type="CsviVirtuemartOrderUser"
+				size="7"
+				default=""
+				class="advancedSelect"
+				multiple="true">
+				<option value="">COM_CSVI_DONT_USE</option>
+			</field>
+
+			<field name="orderproduct"
+				type="CsviVirtuemartOrderProduct"
+				size="7"
+				default=""
+				class="advancedSelect"
+				multiple="true">
+				<option value="">COM_CSVI_DONT_USE</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

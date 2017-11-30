@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="jform">
+		<fieldset name="general">
+			<field name="locale"
+				   type="language"
+				   label="COM_CSVI_CATEGORY_LOCALE_LABEL"
+				   description="COM_CSVI_CATEGORY_LOCALE_DESC"
+				   client="site"
+				   default="en-GB"
+				   class="advancedSelect"/>
+
+			<field name="category_separator"
+				type="text"
+				class="input-mini"
+				label="COM_CSVI_CATEGORY_SEPARATOR_LABEL"
+				description="COM_CSVI_CATEGORY_SEPARATOR_DESC"
+				default="/" />
+		</fieldset>
+	</fields>
+</form>

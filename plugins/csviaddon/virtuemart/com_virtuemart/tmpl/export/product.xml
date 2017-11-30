@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="jform">
+		<fieldset name="general">
+			<field name="language"
+				type="CsviVirtuemartLanguage"
+				size="1"
+				class="advancedSelect"
+				onchange="Csvi.loadCategoryTree(this.value, jform_component.value); Csvi.loadManufacturers(this.value, jform_component.value)" />
+
+			<field name="category_separator"
+				type="text"
+				class="input-mini"
+				default="/" />
+		</fieldset>
+
+		<fieldset name="product">
+			<field name="exportsef"
+				type="list"
+				size="1"
+				default="1"
+				class="input-small advancedSelect">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field name="producturl_suffix"
+				type="text"
+				class="input-mini" />
+
+			<field name="vm_itemid"
+				type="text"
+				class="input-mini" />
+
+			<field name="picture_limit"
+				type="text"
+				class="input-mini"
+				default="1" />
+
+			<field name="featured"
+				type="list"
+				size="1"
+				default="0"
+				class="input-small advancedSelect">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field name="product_categories"
+				size="7"
+				type="CsviVirtuemartProductCategories"
+				multiple="true"
+				class="advancedSelect"
+				/>
+
+			<field name="publish_state_categories"
+				type="list"
+				size="1"
+				default=""
+				class="input-medium advancedSelect">
+				<option value="">COM_CSVI_ALL_STATES</option>
+				<option value="1">COM_CSVI_PUBLISHED</option>
+				<option value="0">COM_CSVI_UNPUBLISHED</option>
+			</field>
+
+			<field name="incl_subcategory"
+				type="list"
+				size="1"
+				default="0"
+				class="input-small advancedSelect">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field name="parent_only"
+				type="list"
+				size="1"
+				default="0"
+				class="input-small advancedSelect">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field name="child_only"
+				type="list"
+				size="1"
+				default="0"
+				class="input-small advancedSelect">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field name="productskufilter"
+				type="text"
+				class="input-xxlarge" />
+
+			<field name="priceoperator"
+				type="list"
+				size="1"
+				emptylabel="1"
+				emptydescription="1"
+				default="gt"
+				class="input-medium advancedSelect">
+				<option value="gt">COM_CSVI_PRICE_GREATER_THAN</option>
+				<option value="eq">COM_CSVI_PRICE_EQUAL</option>
+				<option value="lt">COM_CSVI_PRICE_LOWER_THAN</option>
+				<option value="bt">COM_CSVI_PRICE_BETWEEN</option>
+			</field>
+
+			<field name="price_quantity_start"
+				type="text"
+				class="input-mini" />
+
+			<field name="price_quantity_end"
+				type="text"
+                class="input-mini" />
+
+            <field name="shopper_group_price"
+                   type="CsviVirtuemartShoppergroup"
+                   size="1"
+                   multiple="false"
+				   class="advancedSelect"
+                   default="none">
+                <option value="none">COM_CSVI_DONT_USE</option>
+                <option value="*">COM_CSVI_ALL_SHOPPERGROUPS</option>
+            </field>
+
+			<field name="pricefrom"
+				type="text"
+                class="input-mini" />
+
+			<field name="priceto"
+				type="text"
+                class="input-mini" />
+
+			<field name="stocklevelstart"
+				type="text"
+                class="input-mini" />
+
+			<field name="stocklevelend"
+				type="text"
+                class="input-mini" />
+
+			<field name="targetcurrency"
+				type="CsviVirtuemartCurrency"
+				size="1"
+				class="advancedSelect"
+				default="">
+				<option value="">COM_CSVI_DONT_USE</option>
+			</field>
+
+			<field name="force_shopper_group_price"
+				   type="CsviVirtuemartShoppergroup"
+				   size="1"
+				   multiple="false"
+				   class="advancedSelect"
+				   default="none">
+				<option value="none">COM_CSVI_DONT_USE</option>
+				<option value="0">COM_CSVI_USE_LOGGED_IN_USER</option>
+			</field>
+
+			<field name="shopper_groups"
+				type="CsviVirtuemartShoppergroup"
+				size="7"
+				multiple="true"
+				class="input-xxlarge advancedSelect"
+				default="none">
+				<option value="none">COM_CSVI_ALL_SHOPPERGROUPS</option>
+			</field>
+
+			<field name="manufacturers"
+				type="CsviVirtuemartManufacturer"
+				size="7"
+				multiple="true"
+				class="advancedSelect"
+				default="none">
+				<option value="none">COM_CSVI_ALL_MANUFACTURERS</option>
+			</field>
+
+			<field name="custom_title"
+				type="CsviVirtuemartCustomfield"
+				size="7"
+				multiple="true"
+				default=""
+				class="input-xlarge advancedSelect">
+				<option value="">COM_CSVI_DONT_USE</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

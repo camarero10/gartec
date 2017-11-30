@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="jform">
+		<fieldset name="outputfile">
+			<field name="export_filename"
+				type="text"
+				size="40" />
+
+			<field name="export_file"
+				   type="hidden"
+				   default="xml"
+				   emptylabel="true"
+				   emptydescription="true" />
+
+			<field name="export_site"
+				   type="hidden"
+				   default="orderadvanced"
+				   emptylabel="true"
+				   emptydescription="true" />
+
+			<field name="publish_state"
+				type="list"
+				size="1"
+				class="input-medium advancedSelect"
+				default="">
+				<option value="">COM_CSVI_ALL_STATES</option>
+				<option value="1">COM_CSVI_PUBLISHED</option>
+				<option value="0">COM_CSVI_UNPUBLISHED</option>
+			</field>
+
+			<field name="recordstart"
+				type="text"
+				class="input-small"
+				size="5" />
+
+			<field name="recordend"
+				type="text"
+				class="input-small"
+				size="5" />
+
+			<field name="export_date_format"
+				type="text"
+				class="input-small"
+				default="d/m/Y H:i:s" />
+
+			<field name="export_price_format_decimal"
+				type="text"
+				class="input-small"
+				maxlength="1"
+				default="2" />
+
+			<field name="export_price_format_decsep"
+				type="text"
+				class="input-small"
+				maxlength="1" />
+
+			<field name="export_price_format_thousep"
+				type="text"
+				class="input-small"
+				maxlength="1" />
+
+			<field name="add_currency_to_price"
+				type="list"
+				size="1"
+				class="input-small advancedSelect"
+				default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

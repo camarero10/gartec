@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="jform">
+		<fieldset name="layout">
+			<field name="header"
+				type="textarea"
+				rows="3"
+				class="input-xxlarge" />
+
+			<field name="order"
+				type="textarea"
+				rows="25"
+				class="input-xxlarge" />
+
+			<field name="orderline"
+				type="textarea"
+				rows="10"
+				class="input-xxlarge" />
+
+			<field name="footer"
+				type="textarea"
+				rows="3"
+				class="input-xxlarge" />
+		</fieldset>
+	</fields>
+</form>

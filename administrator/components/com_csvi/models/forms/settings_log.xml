@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="jform">
+		<fieldset name="log">
+			<field
+				name="log_max"
+				type="text"
+				default="25"
+				class="input-mini"/>
+		</fieldset>
+	</fields>
+</form>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="jform">
+		<fieldset name="general" label="COM_CSVI_IMPORT_OPTIONS">
+			<field name="language"
+				type="CsviVirtuemartLanguage"
+				class="advancedSelect"
+				size="1" />
+
+			<field name="category_separator"
+				type="text"
+				class="input-mini"
+				default="/" />
+		</fieldset>
+
+		<fieldset name="product">
+			<field name="append_categories"
+				type="list"
+				size="1"
+				advancedUser="1"
+				class="input-small advancedSelect"
+				default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field name="update_based_on"
+				type="text"
+				advancedUser="1"
+				default="product_sku" />
+
+			<field name="unpublish_before_import"
+				type="list"
+				size="1"
+				advancedUser="1"
+				class="input-small advancedSelect"
+				default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field name="recreate_alias"
+				type="list"
+				size="1"
+				advancedUser="1"
+				class="input-small advancedSelect"
+				default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field name="update_stockable_parent"
+				type="list"
+				size="1"
+				advancedUser="1"
+				class="input-small advancedSelect"
+				default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>
+		<fieldset name="icecat" label="COM_CSVI_IMPORT_ICECAT">
+			<field name="use_icecat"
+				type="list"
+				size="1"
+				class="input-small advancedSelect"
+				default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field name="similar_sku"
+				type="list"
+				size="1"
+				class="input-small advancedSelect"
+				default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field name="icecat_update_fields"
+				type="list"
+				size="10"
+				default=""
+				class="advancedSelect"
+				multiple="true">
+				<option value="">JNONE</option>
+				<option value="category_path">category_path</option>
+				<option value="file_url">file_url</option>
+				<option value="file_url_thumb">file_url_thumb</option>
+				<option value="manufacturer_name">manufacturer_name</option>
+				<option value="product_available_date">product_available_date</option>
+				<option value="product_name">product_name</option>
+				<option value="product_desc">product_desc</option>
+				<option value="product_s_desc">product_s_desc</option>
+				<option value="related_products">related_products</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

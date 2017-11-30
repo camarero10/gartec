@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="jform">
+		<fieldset name="userinfo">
+			<field name="userinfo_address"
+				type="list"
+				size="1"
+				class="input-medium advancedSelect"
+				default="">
+				<option value="">COM_CSVI_DONT_USE</option>
+				<option value="BT">COM_CSVI_BILLING_ADDRESS</option>
+				<option value="ST">COM_CSVI_SHIPPING_ADDRESS</option>
+			</field>
+
+			<field name="vendors"
+				type="CsviVirtuemartVendor"
+				size="7"
+				multiple="true"
+				class="advancedSelect"
+				default="none">
+				<option value="none">COM_CSVI_DONT_USE</option>
+			</field>
+
+			<field name="userinfomdatestart"
+				type="csvicalendar"
+				format="%d-%m-%Y %H:%M:%S"
+				size="25" />
+
+			<field name="userinfomdateend"
+				type="csvicalendar"
+				format="%d-%m-%Y %H:%M:%S"
+				size="25" />
+
+			<field name="blocked"
+				   type="list"
+				   size="1"
+				   class="input-medium advancedSelect"
+				   default="">
+				<option value="">COM_CSVI_DONT_USE</option>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field name="activated"
+				   type="list"
+				   size="1"
+				   class="input-medium advancedSelect"
+				   default="">
+				<option value="">COM_CSVI_DONT_USE</option>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>
