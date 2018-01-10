@@ -2271,3 +2271,8 @@ script[id^="vm"] + h2 {
 	left: 0;
 	font-family: 'Open Sans', sans-serif;
 }
+
+.category-view div.category div.spacer img
+{
+	max-height: 254px;
+}

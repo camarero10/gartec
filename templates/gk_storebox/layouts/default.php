@@ -61,6 +61,9 @@ if($gkContentClass != '') {
 	<?php else : ?>
 		<meta name="viewport" content="width=<?php echo $this->API->get('template_width', 1020)+80; ?>">
 	<?php endif; ?>
+	<script type="text/javascript">
+		var Virtuemart = {};
+	</script>
     <jdoc:include type="head" />
     <?php $this->layout->loadBlock('head'); ?>
 	<?php $this->layout->loadBlock('cookielaw'); ?>
