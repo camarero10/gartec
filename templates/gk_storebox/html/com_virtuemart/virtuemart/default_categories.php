@@ -35,7 +35,15 @@ $verticalseparator = " vertical-separator";
 	    		<?php
 	    		if (!empty($category->images)) {
 		    		echo '<a href="'.$caturl.'" title="'.$category->category_name.'">';
+		    		if ($category->images[0]->virtuemart_media_id == '0')
+		    		{
+		    			echo '<div class="empty_img">';
+		    		}
 		    		echo $category->images[0]->displayMediaThumb("", false);
+		    		if ($category->images[0]->virtuemart_media_id == '0')
+		    		{
+		    			echo '</div>';
+		    		}
 		    		echo '</a>';
 	    		}
 	    		?>

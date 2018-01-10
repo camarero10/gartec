@@ -64,6 +64,7 @@ if($gkContentClass != '') {
     <jdoc:include type="head" />
     <?php $this->layout->loadBlock('head'); ?>
 	<?php $this->layout->loadBlock('cookielaw'); ?>
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->API->URLtemplate() ?>/css/desktopRange.css">
 </head>
 <body<?php echo $tpl_page_suffix; ?><?php if($this->browser->get("tablet") == true) echo ' data-tablet="true"'; ?><?php if($this->browser->get("mobile") == true) echo ' data-mobile="true"'; ?><?php $this->layout->generateLayoutWidths(); ?> <?php if($this->API->modules('cart')) echo ' data-cart="true"'; ?> data-smoothscroll="<?php echo $this->API->get('use_smoothscroll', '1'); ?>">
 	<?php

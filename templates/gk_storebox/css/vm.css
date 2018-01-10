@@ -251,7 +251,8 @@ table.cart-summary a {
 .browse-view .row .product .spacer img,
 .related-products-view .row .product .spacer img {
 	height: auto;
-	max-width: 90%
+	max-width: 90%;
+	height: 254px;
 }
 
 .cart-summary .inputbox {
@@ -376,7 +377,7 @@ table.cart-summary a:hover,
 .related-products-view .spacer,
 .browse-view .row .product .spacer,
 .manufacturer-view-default .row .manufacturer .spacer {
-	padding: 6px
+	padding: 0;
 }
 
 .category-view h4 {
@@ -1140,7 +1141,7 @@ ul#tabs {
 .vertical-separator,
 .vertical-separator + .category,
 .vertical-separator + .product {
-	padding: 0 10px 20px 10px;
+	padding: 0;
 }
 
 .product {

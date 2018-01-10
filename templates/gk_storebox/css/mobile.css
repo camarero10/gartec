@@ -5,11 +5,109 @@
 # Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
 # License: Copyrighted Commercial Software
 # Website: http://www.gavick.com
-# Support: support@gavick.com 
+# Support: support@gavick.com
 */
 
+/*..............Max-width 480 px....................*/
+
 body {
-	padding: 10px 5px 30px 5px!important;
+	padding: 0;
+}
+
+#gkLogo img {
+	display: block;
+	margin: 0;
+	height: 53px;
+	width: 100px;
+	margin-left: 15px;
+}
+
+body.pointhome #gkPageContent #gkHeaderBottom {
+	background: url("../images/fondo-cats.svg") no-repeat center top;
+	background-size: cover;
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+body.pointhome #gkHeaderBottom .box.prod_destacados {
+	margin: 0;
+	padding: 0 0 15px 0;
+}
+
+body.pointhome .box.lola .content {
+	clear: both;
+	overflow: hidden;
+	padding: 25px 15px 30px 15px;
+}
+
+body.pointhome .box.lola .vm-categories-wall-catwrapper.floatleft {
+	border-bottom: none;
+	padding: 0;
+	width: 90%;
+	margin: 5%;
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+
+#gkMainbody .box.lola {
+	max-width: 1200px;
+	margin: 0 auto;
+	float: none;
+	overflow: hidden;
+	padding: 30px 0 0 0;
+}
+
+.box.lola .vm-categories-wall-spacer.center {
+	width: 100%;
+	height: auto;
+	float: left;
+	display: block;
+	overflow: hidden;
+	border: 1px solid #dadada;
+	background: #fff;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.box.lola .vm-categories-wall-spacer.center .container_texto_cat {
+	width: calc(50% - 60px);
+	float: left;
+	height: 100%;
+	display: block;
+	overflow: inherit;
+	color: #3c3c3c;
+	line-height: 1.1em;
+	font-weight: 800;
+	text-align: left;
+	word-wrap: normal;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	letter-spacing: -1px;
+	padding: 64px 30px 0 0;
+}
+
+body.pointhome #gkMainWrap #gkPageContent #custom_text {
+	background-size: cover;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+	float: left;
+}
+
+body.pointhome #custom_text .box {
+	color: #ffffff;
+	font-family: 'Open sans', sans-serif;
+	float: right;
+	width: 80%;
+	padding: 40px 40px 70px 40px !important;
 }
 
 #gkSidebar .box,
@@ -45,14 +143,13 @@ body {
 	padding-left: 0px;
 }
 #gkContent {
-	padding-top: 10px;
+	padding-top:0;
 }
 #gkSearch {
 	margin-top: 5px;
+	width: 85px;
 }
-#gkMobileMenu {
-	margin-top: 61px;
-}
+
 #gkTopMenu {
 	clear: left;
 	float: left;
@@ -429,12 +526,12 @@ h6 {
 }
 
 .gkIsWrapper-gk_storebox {
-	margin: 140px 0 0 0;
-	min-height: 120px;
+	margin: 0 auto;
 }
 
 .gkIsWrapper-gk_storebox .gkIsOverlay {
-	background-image: url('../images/header_gradient_mobile.png');
+/*	background-image: url('../images/header_gradient_mobile.png');*/
+	background-image:none;
 }
 
 .gkNspPM-NewsGallery {
@@ -459,7 +556,7 @@ h6 {
 
 /* Other */
 #gkPageContent {
-	padding: 0 10px!important;
+	padding: 0 !important;
 }
 
 .gkPriceTable {
@@ -568,15 +665,25 @@ article header h2 {
 /* VM */
 .width50,
 .width40,
-.width33,
-.width25,
 .width20 {
 	clear: both;
 	float: none!important;
 	margin: 0 auto;
-	max-width: 240px;
-	width: 100%!important;
+	width: 100%;
 }
+
+.width25 {
+	margin: 0 auto;
+	float: none;
+}
+
+
+.width33 {
+	margin: 0 auto;
+	width: 100%;
+	float: none;
+}
+
 .productDetails .floatright,
 .productDetails .floatleft {
 	clear: both;
@@ -589,9 +696,7 @@ article header h2 {
 	float: left!important;
 	width: auto;
 }
-.row > div {
-	float: none!important;
-}
+
 .width50 .spacer img,
 .width40 .spacer img,
 .width33 .spacer img,
@@ -617,14 +722,13 @@ article header h2 {
 	display: table;
 }
 .orderby-displaynumber .display-number {
-	clear: both;
+/*	clear: both;*/
 	float: left;
-	margin-top: 10px;
 	min-width: 150px!important;
 	text-align: left;
 }
 .vertical-separator {
-	padding: 0!important;
+	padding: 0;
 }
 .row .product,
 .row .category {
@@ -632,14 +736,14 @@ article header h2 {
 }
 .width20:nth-child(odd),
 .width25:nth-child(odd) {
-	clear: both!important;
+/*	clear: both!important;
 	padding-left: 0!important;
-	padding-right: 0px!important;	
+	padding-right: 0px!important;	*/
 }
 .width20:nth-child(even),
 .width25:nth-child(even) {
-	padding-left: 0px!important;
-	padding-right: 0!important;	
+/*	padding-left: 0px!important;
+	padding-right: 0!important;	*/
 }
 
 #product-tabs,
@@ -687,3 +791,259 @@ article header h2 {
 	margin: 20px 0;
 	width: 100%;
 }
+
+body.pointhome .direccion-footer .logo-corp img,
+body.quienes-somos .direccion-footer .logo-corp img,
+body.plantas .direccion-footer .logo-corp img,
+body.full-width .direccion-footer .logo-corp img {
+	margin: 20px auto;
+	width: 50%;
+	padding: 5% 25% 0 25%;
+}
+
+body.pointhome #gkBottom1,
+body.quienes-somos #gkBottom1,
+body.plantas #gkBottom1,
+body.full-width #gkBottom1 {
+	text-align: center;
+}
+
+body.pointhome #gkBottom1 .box.bigtitle.double,
+body.pointhome #gkBottom1 .box.gkmod-4,
+body.quienes-somos #gkBottom1 .box.bigtitle.double,
+body.quienes-somos #gkBottom1 .box.gkmod-4,
+body.plantas #gkBottom1 .box.bigtitle.double,
+body.plantas #gkBottom1 .box.gkmod-4,
+body.full-width #gkBottom1 .box.bigtitle.double,
+body.full-width #gkBottom1 .box.gkmod-4 {
+	padding-bottom: 40px;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+body.pointhome #gkSearch #mod-search-searchword,
+body.quienes-somos #gkSearch #mod-search-searchword,
+body.plantas #gkSearch #mod-search-searchword,
+body.full-width #gkSearch #mod-search-searchword {
+	width: 85px;
+}
+
+body.pointhome #gkHeader {
+	padding-bottom: 0;
+	height: 300px;
+}
+
+body.pointhome #gkHeader img.gkIsSlide {
+	display: block;
+	position: relative;
+	height: 300px;
+	width: auto;
+}
+
+body.pointhome #gkHeader #gkHeaderMod .frase-slider {
+	font-size: 20px;
+	margin-top: 0px;
+	line-height: 1.25em;
+}
+
+body.quienes-somos #gkMainbody .itemBody .cont_info_QS p {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto 15px auto;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 2em;
+	font-size: 14px;
+}
+
+body.quienes-somos #gkMainbody .itemBody .cont_info_QS .text-blanco-imagen {
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	top: 10%;
+	left: calc(50% - 150px);
+	width: 100%;
+	max-width: 300px;
+	font-size: 14px;
+}
+
+body.quienes-somos #gkMainbody .cont_info_QS .container-equipo {
+	width: 80%;
+	max-width: 1200px;
+	margin: 30px auto 0 auto;
+	display: block;
+	overflow: hidden;
+	float: none;
+	font-size: 14px;
+}
+
+
+body.plantas #gkMainbody .itemBody .cont_info_QS img {
+	height: 523px;
+	width: auto;
+	display: block;
+	max-width: 1920px;
+}
+
+body.plantas #gkMainbody .cont_info_QS .plantas-gris .cont-ajust .middle img {
+	width: 100%;
+	padding: 0;
+	height: auto;
+}
+
+body.plantas #gkMobileMenu,
+body.full-width #gkMobileMenu {
+	margin-top: 0;
+}
+
+/*	catalogo ................................................*/
+
+body.full-width #gkMainbody .header .row > div {
+	float: left;
+}
+
+body.full-width #gkPageContent #gkMainbody .row .product.width25.vertical-separator,
+body.full-width #gkPageContent #gkMainbody .category.floatleft.width33.vertical-separator {
+	float: left;
+	width: 50%;
+	padding: 25px;
+	display: block;
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------------*/
+
+@media (max-width: 400px) {
+
+	body.pointhome .box.lola .vm-categories-wall-spacer.center .container_texto_cat {
+		width: calc(50% - 60px);
+		float: left;
+		height: 100%;
+		display: block;
+		overflow: inherit;
+		color: #3c3c3c;
+		line-height: 1.1em;
+		font-weight: 800;
+		text-align: left;
+		word-wrap: normal;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+		letter-spacing: -1px;
+		padding: 30px 30px 0 0;
+	}
+
+	body.pointhome #gkContentWrap {
+		padding-bottom: 0;
+	}
+
+	body.quienes-somos #gkMainbody .cont_info_QS .cont_people {
+		position: relative;
+		width: 100%;
+		height: auto;
+		padding: 40px 0 20px 0;
+		float: right;
+		display: block;
+		overflow: hidden;
+		justify-content: space-around;
+		margin: 0 auto;
+	}
+
+	body.quienes-somos #gkMainbody .cont_info_QS .cont_people .person {
+		width: 200px;
+		height: auto;
+		display: block;
+		overflow: hidden;
+		padding: 20px;
+		margin: 0 auto;
+	}
+
+/*	plantas ...................................................*/
+
+	body.plantas #gkMainbody .itemBody .cont_info_QS .text-blanco-imagen {
+		color: #FFFFFF;
+		font-family: 'Open Sans', sans-serif;
+		position: absolute;
+		top: 8%;
+		left: 10%;
+		width: 80%;
+		max-width: 1200px;
+		font-size: 18px;
+		padding-bottom: 15px;
+	}
+
+	body.plantas #gkMainbody .itemBody .cont_info_QS img {
+		height: 600px;
+		width: auto;
+		display: block;
+		max-width: 1920px;
+	}
+
+
+	body.plantas .gkIsWrapper-gk_bikestore {
+		margin: 0;
+		min-height: 50px;
+		position: relative;
+	}
+
+	/*	catalogo ................................................*/
+
+	body.full-width #gkMainbody .header .row > div {
+		float: left;
+	}
+
+	body.full-width #gkPageContent #gkMainbody .row .product.width25.vertical-separator,
+	body.full-width #gkPageContent #gkMainbody .category.floatleft.width33.vertical-separator {
+		float: left;
+		width: 100%;
+		padding: 25px;
+		display: block;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

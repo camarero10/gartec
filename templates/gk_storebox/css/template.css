@@ -38,7 +38,7 @@ span.amarillo {
 }
 
 .amarillo {
-	color:#ffcc00;
+	color:#517AB6;
 }
 
 .panoramic {
@@ -361,7 +361,7 @@ body.pointhome #gkContent.gkContentNoSidebar #gkMainbody {
 	margin: 26px -16px 0 0 !important;
 	padding: 0;
 	width: auto;
-	background: #ffcc00;
+	background: #F0F0F0;
 }
 
 #gkMainWrap #gkMainMenu #gkExtraMenu.gkMenu {
@@ -779,10 +779,14 @@ div.content {
 	padding: 40px 30px 30px 30px;
 }
 
-
-.box .header em {
+body.pointhome .lola h3.header em {
 	font-style: normal;
-	color: #ffcc00;
+	color: #FFFFFF;
+} 
+
+body.pointhome .prod_destacados h3.header em {
+	font-style: normal;
+	color: #2E669F;
 }
 
 .box .header span {
@@ -1140,7 +1144,8 @@ span#fb-auth:hover {
 	position: relative;
 }
 
-#btnCart {
+#btnCart { /*boton carrito deshabilitado para cuando inicien compra online*/
+	display: none;
 	background: transparent;
 	background-position: 36px center!important;
 	background-repeat: no-repeat!important;
@@ -1311,7 +1316,7 @@ body.pointhome .gkNspPM-ProductGallery .gkImagesWrapper {
 /*TEXTO HOME -------------------------------------------------------------*/
 
 #gkPageContent #custom_text {
-	background: rgb(255, 204, 0);
+	background: #2E669F;
 	padding-top: 75px;
 	padding-bottom: 75px;
 	padding-left: 0;
@@ -1323,7 +1328,7 @@ body.pointhome .gkNspPM-ProductGallery .gkImagesWrapper {
 }
 
 #gkPageContent #custom_img {
-	background: rgb(255, 204, 0);
+	background: #2E669F;
 	padding-left: 0;
 	padding-right: 0;
 	width: 50%;
@@ -1341,7 +1346,7 @@ body.pointhome .gkNspPM-ProductGallery .gkImagesWrapper {
 }
 
 #gkPageContent #custom_text .box {
-	color: #000000;
+	color: #FFFFFF;
 	width: 560px;
 	font-family: 'Open sans', sans-serif;
 	float: right;
@@ -1349,6 +1354,7 @@ body.pointhome .gkNspPM-ProductGallery .gkImagesWrapper {
 }
 
 #gkPageContent #custom_text .box h3.header {
+	color: #dadada;
 	margin-bottom: 30px;
 	font-family: 'Open sans', sans-serif;
 	font-weight: bold;
@@ -1497,6 +1503,7 @@ body.full-width #gkContentWrap {
 	padding: 5px 30px;
 	margin-left: -30px;
 	display: block;
+	line-height: 1.2em;
 }
 
 #gkMainWrap #gkContent #gkSidebar .box a:hover {
@@ -1533,18 +1540,29 @@ body.full-width #gkContentWrap {
 	font-family: 'Open Sans', sans-serif;
 }
 
+#gkMainbody .vm-product-details-container .productDetailInfo {
+	font-size: 13px;
+	margin: 0 0 0px;
+	width: 50%;
+	float: right;
+}
+
+#gkMainbody .vm-product-details-container .addtocart-area {
+	float: right;
+}
+
 .productdetails-view .productDetails .text-productDetails {
 	text-align: right;
 	font-family: 'Open Sans', sans-serif;
 }
 
 .text-productDetails .PricesalesPrice {
-	background: #ffcc00;
-	color: #000;
+	background: #517AB6;
+	color: #FFFFFF;
 	font-size: 28px;
 	padding: 12px;
 	margin-bottom: 10px;
-	width: 90%;
+	width: calc(100% - 24px);
 	display: block;
 	float: right;
 }
@@ -1577,13 +1595,15 @@ body.full-width #gkMainbody .category-view.box.bigtitle span {
 body.full-width #gkPageContent .category.floatleft.width33.vertical-separator {
 	float: left;
 	width: 25%;
-	padding: 50px;
+	padding: 25px;
+	display: block;
 }
 
 body.full-width #gkPageContent .category-view .row .category .spacer h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
+	min-height: 50px;
 }
 
 body.full-width #gkPageContent .productDetails {
@@ -1872,9 +1892,9 @@ body.full-width #gkMainbody .orderby-displaynumber .display-number {
 
 body.full-width #gkMainbody .row .product.width25.vertical-separator,
 body.full-width #gkMainbody .row .product.width33.vertical-separator {
-	width: 23.5%;
-	margin:0.75%;
-	padding: 50px;
+	width: 25%;
+	margin: 0;
+	padding: 25px;
 }
 
 
@@ -1885,8 +1905,12 @@ body.full-width #gkMainbody .row .product.width25.vertical-separator .spacer {
 }
 
 body.full-width #gkMainbody .browse-view .product .product-overlay > span > span {
-	background: #ffcc00;
-	color: #000;
+	background: #517AB6;
+	color: #FFFFFF;
+}
+
+body.full-width #gkMainbody h3.catProductTitle {
+	min-height: 35px;
 }
 
 
@@ -1907,6 +1931,7 @@ body.plantas #gkMainbody .cont_info_QS,
 body.plantas #gkMainbodyBottom .cont_info_QS  {
 	position: relative;
 	overflow: hidden;
+	height:auto;
 }
 
 body.plantas #gkMainbody .cont_info_QS p{
@@ -2155,8 +2180,8 @@ body.contacto .super-contenedor-datos .cont_address {
 	height: auto;
 	margin: 30px 0 0 0;
 	padding: 50px;
-	background: #ffcc00;
-	color: #000;
+	background:#517AB6;
+	color: #FFFFFF;
 }
 
 body.contacto .super-contenedor-datos .cont_address h2 {
@@ -2262,6 +2287,10 @@ body.contacto #jform_captcha div {
 }
 
 body.contacto #jform_captcha-lbl {
+	display: none;
+}
+
+body.contacto #gkMainbodyBottom {
 	display: none;
 }
 

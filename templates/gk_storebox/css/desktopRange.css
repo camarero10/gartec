@@ -1,0 +1,237 @@
+/*mediaqueries --------------------------------------------------------------*/
+
+@media only screen and (max-width: 1550px) {
+
+}
+
+
+
+
+@media only screen and (max-width: 1400px) {
+
+    body.pointhome figure.active figcaption {
+        top: 50%;
+        left: 15%;
+        background: transparent none repeat scroll 0% 0%;
+        color: rgb(255, 255, 255);
+        margin-top: 50px;
+        opacity: 0;
+    }
+
+    body.pointhome .gkIsWrapper-gk_storebox figcaption span.frase-slider {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 35px;
+        font-weight: 800;
+        width: 85%;
+        display: block;
+        line-height: 1.1em;
+        margin-top: 30px;
+    }
+
+    body.pointhome .gkIsWrapper-gk_storebox .gkIsPrev,
+    .gkIsWrapper-gk_storebox .gkIsNext {
+        top: 50%;
+
+    }
+
+    body.pointhome #gkHeaderBottom .box.prod_destacados .content {
+        padding: 0;
+    }
+
+    body.pointhome #gkPageContent #custom_text {
+        background: #2E669F;
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 20px;
+        padding-right: 0;
+        width: calc(50% - 20px);
+        overflow: hidden;
+        height: 400px;
+        float: left;
+    }
+
+    body.pointhome #gkPageContent #custom_text .box {
+        color: #ffffff;
+        width: auto;
+        font-family: 'Open sans', sans-serif;
+        float: right;
+        padding-right: 40px;
+    }
+
+
+/*    quienes somos ......................................*/
+
+    .cab_principal .text-volador {
+        top: 60%;
+        font-size: 32px;
+    }
+
+    body.quienes-somos #gkMainbody .cont_info_QS .text-blanco-imagen {
+        color: #FFFFFF;
+        font-family: 'Open Sans', sans-serif;
+        position: absolute;
+        top: 15%;
+        left: calc(50% - 450px);
+        width: 100%;
+        max-width: 900px;
+        font-size: 18px;
+    }
+
+/*plantas .............................................*/
+
+    body.plantas #gkMainbody .cont_info_QS .text-blanco-imagen {
+        color: #FFFFFF;
+        font-family: 'Open Sans', sans-serif;
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        width: 80%;
+        max-width: 1200px;
+        font-size: 18px;
+    }
+
+    body.plantas #gkMainbody .cont_info_QS img {
+        height: 100%;
+        width: auto;
+        display: block;
+        max-width: 1401px;
+    }
+
+/*    catalogo .............................................*/
+
+    body.full-width #gkMainbody .row .product.width25.vertical-separator,
+    body.full-width #gkMainbody .row .product.width33.vertical-separator {
+        width: 25%;
+        margin: 0;
+        padding: 25px;
+    }
+
+    body.full-width #gkPageContent #gkContentWrap.gkSidebarLeft {
+        padding: 50px 50px 0 50px;
+    }
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    body.pointhome .gkIsWrapper-gk_storebox figcaption span.frase-slider {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    body.pointhome .gkIsWrapper-gk_storebox .gkIsPrev,
+    .gkIsWrapper-gk_storebox .gkIsNext {
+        top: 55%;
+
+    }
+
+    body.pointhome #gkHeaderBottom {
+        background: url("../images/fondo-cats.svg") no-repeat center top;
+        background-size: cover;
+        width: 80%;
+        max-width: 1200px;
+        margin: 45px auto 0 auto;
+        padding-bottom: 30px;
+    }
+
+    body.pointhome #gkHeaderBottom .box {
+        margin: 0;
+        padding: 75px 15px 0 15px;
+    }
+
+    body.pointhome .gkNspPM-ManufacturerGallery.gkArrows {
+        padding: 0 15px;
+    }
+
+    body.pointhome .gkNspPM-ManufacturerGallery .gkImagesWrapper > a img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    body.pointhome #gkMainbodyBottom .content {
+        padding: 0;
+    }
+
+/*    quienes somos ...............................................*/
+
+    .cab_principal {
+        width: 100%;
+        float: left;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        height: 400px;
+    }
+
+    .cab_principal img {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        display: block;
+        float: left;
+    }
+
+    body.quienes-somos #gkMainbody .cont_info_QS .text-blanco-imagen {
+        color: #FFFFFF;
+        font-family: 'Open Sans', sans-serif;
+        position: absolute;
+        top: 15%;
+        left: calc(50% - 400px);
+        width: 100%;
+        max-width: 800px;
+        font-size: 18px;
+    }
+
+    body.quienes-somos #gkMainbody .cont_info_QS .text-left {
+        margin-top: 25px;
+    }
+
+
+
+/*    plantas ................................................*/
+
+    body.plantas #gkMainbody .cont_info_QS img {
+        height: 100%;
+        width: auto;
+        display: block;
+        max-width: 1201px;
+    }
+
+/*    catalogo ...................................................*/
+
+
+    body.full-width #gkPageContent #gkContentWrap.gkSidebarLeft {
+        padding: 50px;
+    }
+
+    body.full-width #gkPageContent .category.floatleft.width33.vertical-separator,
+    body.full-width #gkMainbody .row .product.width25.vertical-separator {
+        float: left;
+        width: 33.3%;
+        padding: 25px;
+        display: block;
+    }
+
+    body.full-width #gkMainbody .row .product.width25.vertical-separator {
+        margin: 0;
+    }
+
+    body.full-width h3.catProductTitle {
+        min-height: 50px;
+    }
+
+
+
+
+
+
+}

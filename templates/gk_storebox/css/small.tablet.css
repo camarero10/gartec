@@ -5,12 +5,89 @@
 # Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
 # License: Copyrighted Commercial Software
 # Website: http://www.gavick.com
-# Support: support@gavick.com 
+# Support: support@gavick.com
 */
- 
-body[data-cart="true"] {
-	padding-right: 10px;
-} 
+
+/*..............Max-width 767 px....................*/
+
+
+body.pointhome[data-cart="true"],
+body.quienes-somos[data-cart="true"],
+body.plantas[data-cart="true"],
+body.full-width[data-cart="true"] {
+	padding-right: 0;
+	padding-left: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+body.pointhome #custom_text .box {
+	color: #ffffff;
+	font-family: 'Open sans', sans-serif;
+	float: right;
+	width: 80%;
+	padding: 40px 70px 70px 70px !important;
+}
+
+
+body.pointhome #gkMainWrap.gkPage #gkHeader #gkHeaderNav,
+body.quienes-somos #gkMainWrap.gkPage #gkHeader #gkHeaderNav,
+body.plantas #gkMainWrap.gkPage #gkHeader #gkHeaderNav,
+body.full-width #gkMainWrap.gkPage #gkHeader #gkHeaderNav {
+	padding: 20px 20px 0 0;
+}
+
+body.pointhome #gkHeaderMod figcaption span.frase-slider {
+	font-size: 25px;
+	margin-top: 15px;
+}
+
+#gkPageContent #custom_img {
+	display: none;
+	background: rgb(255, 204, 0);
+	padding-left: 0;
+	padding-right: 0;
+	width: 50%;
+	overflow: hidden;
+	height: 550px;
+	float: left;
+}
+
+body.pointhome #gkMainWrap #gkPageContent #custom_text {
+	background-size: cover;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+	overflow: hidden;
+	height: 500px;
+	float: left;
+}
+
+body.pointhome #gkHeaderBottom {
+	background: url("../images/fondo-cats.svg") no-repeat center top;
+	background-size: cover;
+	width: 90%;
+	max-width: 1200px;
+	margin: 45px auto 0 auto;
+	padding-bottom: 30px;
+}
+
+body.pointhome .box.prod_destacados h3.header {
+	padding-top: 35px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	width: calc(100% - 40px);
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	text-align: left;
+	font-size: 25px;
+	overflow: hidden;
+	float: left;
+}
 
 #gkPageContent {
 	padding: 0 20px;
@@ -112,7 +189,7 @@ body .gkCols6 .box:nth-child(2n+1) {
 .gkNspPM-ProductGallery .gkImagesWrapper.gkImagesCols6 > div,
 .gkNspPM-ProductGallery .gkImagesWrapper.gkImagesCols7 > div,
 .gkNspPM-ProductGallery .gkImagesWrapper.gkImagesCols8 > div {
-	width: 50%!important;
+	width: 48.5%!important;
 }
 
 /* Top */
@@ -127,17 +204,31 @@ body .gkCols6 .box:nth-child(2n+1) {
 }
 
 #gkSearch {
-	clear: left;
-	float: left;
-	margin-top: 20px;
+	float: right;
+	margin-top: 10px;
 }
 
 #gkSearch #mod-search-searchword {
-	background: #fff;
+	background: transparent;
+	color: #FFFFFF;
 }
 
-#gkMobileMenu {
-	margin-top: 44px;
+body.pointhome figcaption {
+	top: 30%;
+	left: 5%;
+	background: transparent none repeat scroll 0% 0%;
+	color: rgb(255, 255, 255);
+	margin-top: 50px;
+	opacity: 0;
+}
+
+body.pointhome #gkMobileMenu,
+body.plantas #gkMobileMenu {
+	margin-top: 5px;
+}
+
+body.quienes-somos #gkMobileMenu {
+	margin-top: 0;
 }
 
 #gkHeaderBottom .box {
@@ -154,3 +245,115 @@ body .gkCols6 .box:nth-child(2n+1) {
 .productdetails-view h1 {
 	font-size: 32px;
 }
+
+/*quienes somos .........................................*/
+
+body.quienes-somos .cab_principal,
+body.plantas .cab_principal,
+body.full-width .cab_principal {
+	width: 100%;
+	float: left;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	height: 300px;
+}
+
+body.quienes-somos .cab_principal .text-volador,
+body.plantas .cab_principal .text-volador,
+body.full-width .cab_principal .text-volador {
+	top: 55%;
+	font-size: 23px;
+	line-height: 1.2em;
+}
+
+body.quienes-somos #gkMainbody .cont_info_QS .titular-text-quienes, body.plantas #gkMainbody .cont_info_QS .titular-text-quienes {
+	width: calc(100% - 40px);
+	padding-top: 40px;
+	padding-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: #000;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+body.quienes-somos #gkMainbody .cont_info_QS img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+body.quienes-somos #gkMainbody .itemBody .cont_info_QS .text-blanco-imagen {
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	top: 10%;
+	left: calc(50% - 200px);
+	width: 100%;
+	max-width: 400px;
+	font-size: 16px;
+}
+
+body.quienes-somos #gkMainbody .cont_info_QS .descripcion img {
+	width: 240px;
+	position: relative;
+	margin: 20px auto 0 auto;
+	display: block;
+}
+
+
+
+/*plantas .....................................................*/
+
+body.plantas #gkMainbody .cont_info_QS .plantas-gris {
+	padding-top: 22px;
+	font-size: 16px;
+}
+
+body.plantas #gkMainbody .cont_info_QS .plantas-gris .middle .tit {
+	font-weight: bold;
+	color: #3c3c3c;
+	font-size: 20px;
+	margin-bottom: 30px;
+	line-height: 1.2em;
+}
+
+body.plantas #gkMainbody .cont_info_QS .text-blanco-imagen .descripcion {
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+body.plantas #gkMainbodyBottom .cont_info_QS .tit p {
+	line-height: 1.2em;
+}
+
+body.plantas #gkMainbodyBottom .cont_info_QS p {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 2em;
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1200px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

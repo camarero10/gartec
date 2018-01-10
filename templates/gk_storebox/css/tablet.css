@@ -8,6 +8,171 @@
 # Support: support@gavick.com 
 */
 
+/*..............Max-width 1023 px....................*/
+
+body.quienes-somos[data-cart="true"],
+body.plantas[data-cart="true"],
+body.full-width[data-cart="true"] {
+	padding-right: 10px;
+}
+
+body.pointhome[data-cart="true"] {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+body.pointhome .gkPage,
+body.quienes-somos .gkPage,
+body.plantas .gkPage,
+body.full-width .gkPage{
+	width: 100%;
+}
+
+body.pointhome #gkHeaderBottom {
+	background: url("../images/fondo-cats.svg") no-repeat center top;
+	background-size: cover;
+	width: 80%;
+	max-width: 1200px;
+	margin: 20px auto 0 auto;
+	padding-bottom: 30px;
+}
+
+body.pointhome #gkHeaderBottom .box.prod_destacados {
+	margin: 0;
+	padding: 45px 15px 0 15px;
+}
+
+
+body.pointhome .gkIsWrapper-gk_storebox .gkIsPrev > span,
+body.pointhome .gkIsWrapper-gk_storebox .gkIsNext > span {
+	background: transparent url('../images/is_arrows.png') no-repeat 0 50%;
+	display: none;
+	height: 70px;
+	text-indent: -9999px;
+	width: 38px;
+}
+
+/* menu */
+#gkMobileMenu {
+	background: transparent url('../images/icon-menu-mobile.png') no-repeat center center;
+	background-size: 85% 85%;
+	float: right;
+	margin: -6px 5px 0 5px;
+	position: relative;
+}
+#gkExtraMenu {
+	display: none!important;
+}
+#gkMainMenu {
+	display: none;
+}
+#gkMobileMenu select {
+	cursor: pointer;
+	width: 44px;
+	height: 44px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#gkMobileMenu {
+	clear: both;
+	display: block!important;
+	float: right;
+	font-size: 18px;
+	height: 44px;
+	line-height: 44px;
+	position: relative;
+	text-indent: -9999px;
+	width: 44px;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	background: #2E669F url('../images/icon-menu-mobile-white.png') no-repeat center center;
+	background-size: 70%;
+	cursor: pointer;
+	margin: 20px 0 0 15px;
+}
+
+#gkMobileMenu:hover {
+	background: #000033 url('../images/icon-menu-mobile-white.png') no-repeat center center;
+	background-size: 70%;
+}
+
+body.pointhome .gkIsWrapper-gk_storebox figcaption span.frase-slider {
+	font-size: 30px;
+	margin-top: 0;
+}
+
+body.pointhome #gkHeaderBottom {
+	background: url("../images/fondo-cats.svg") no-repeat center top;
+	background-size: cover;
+	width: 80%;
+	max-width: 1200px;
+	margin: 0px auto;
+	padding-bottom: 30px;
+}
+
+body.pointhome #gkMainWrap #gkPageContent #custom_text {
+	background: #2E669F;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	padding-right: 0;
+	width: calc(50% - 20px);
+	overflow: hidden;
+	height: 500px;
+	float: left;
+}
+
+#gkPageContent #custom_text .box .content .contenedor-texto-home {
+	width: 100%;
+	font-size: 14px;
+}
+
+
+/*zona categorías --------------------------------------------*/
+
+.box.lola .vm-categories-wall-catwrapper.floatleft {
+	border-bottom: none;
+	padding: 0;
+	width: 31.5%;
+	margin: 0.75%;
+	display: block;
+	float: left;
+}
+
+.box.lola .vm-categories-wall-spacer.center .container_texto_cat {
+	width: calc(50% - 60px);
+	float: left;
+	height: 100%;
+	display: block;
+	overflow: inherit;
+	color: #3c3c3c;
+	line-height: 1.1em;
+	font-weight: 800;
+	text-align: left;
+	word-wrap: normal;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	letter-spacing: -1px;
+	padding: 25px 30px 0 0;
+}
+
+
+/*marcas - manufactures ------------------------------------------*/
+
+body.pointhome #gkMainbodyBottom .box .content {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 90%;
+}
+
+
+
+
 /* Containers */
 #gkSearch #mod-search-searchword {
 	width: 200px;
@@ -96,40 +261,7 @@
 	left: 10px!important;
 }
 
-/* menu */
-#gkMobileMenu {
-	background: transparent url('../images/tablet_menu.png') no-repeat 0 0;
-	float: right;
-	margin: -6px 5px 0 5px;
-	position: relative;
-}
-#gkExtraMenu {
-	display: none!important;
-}
-#gkMainMenu {
-	display: none;
-}
-#gkMobileMenu select {
-	width: 44px;
-	height: 44px;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
-	opacity: 0;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-#gkMobileMenu {
-	clear: both;
-	display: block!important;
-	float: right;
-	font-size: 18px;
-	height: 44px;
-	line-height: 44px;
-	position: relative;
-	text-indent: -9999px;
-	width: 44px;
-}
+
 
 /* top/bottom modules */
 
@@ -262,6 +394,143 @@ body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(5) {
 	padding: 10px 24px;
 }
 
+/*quienes somos .....................................................*/
+
+.cab_principal {
+	width: 100%;
+	float: left;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	height: 300px;
+}
+
+.cab_principal .text-volador {
+	top: 55%;
+	font-size: 32px;
+}
+
+body.quienes-somos #gkMainbody .itemBody .cont_info_QS .text-blanco-imagen {
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	top: 10%;
+	left: calc(50% - 300px);
+	width: 100%;
+	max-width: 600px;
+	font-size: 18px;
+}
+
+body.quienes-somos #gkMainbody .cont_info_QS img {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+body.quienes-somos #gkMainbody .cont_info_QS .container-equipo {
+	width: 90%;
+	max-width: 1200px;
+	margin: 30px auto 0 auto;
+	display: block;
+	overflow: hidden;
+	float: none;
+}
+
+body.quienes-somos #gkMainbody .cont_info_QS .text-left {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 20px auto;
+	float: left;
+	display: block;
+	overflow: hidden;
+	font-family: 'Open Sans', sans-serif;
+	color: #3c3c3c;
+	margin-top: 50px;
+}
+
+body.quienes-somos #gkMainbody .cont_info_QS .cont_people {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 40px 0 20px 0;
+	float: right;
+	display: flex;
+	overflow: hidden;
+	justify-content: space-around;
+}
+
+/*	plantas ..............................................................*/
+
+body.plantas #gkMainbody .cont_info_QS .plantas-gris .cont-ajust .middle {
+	width: 100%;
+	height: auto;
+	float: left;
+	display: block;
+	overflow: hidden;
+	margin: 20px auto;
+}
+
+body.plantas #gkMainbody .cont_info_QS .plantas-gris .cont-ajust .middle img {
+	width: 70%;
+	padding: 0 15% 0 15%;
+}
+
+body.plantas #gkMainbody .itemBody .cont_info_QS .text-blanco-imagen {
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	top: 13%;
+	left: 10%;
+	width: 80%;
+	max-width: 1200px;
+	font-size: 18px;
+	padding-bottom: 15px;
+}
+
+body.plantas #gkMainbodyBottom .box.sliderPlantas .gkIsWrapper-gk_bikestore img {
+	display: block;
+	height: auto;
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+}
+
+
+
+/*catalogo .....................................................................*/
+
+body.full-width #gkMainbody {
+	border: none!important;
+	margin-top: 0;
+	padding-top: 0;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 0;
+}
+
+body.full-width #gkBreadcrumb {
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------*/
+
+
+
+
+
+
 @media (max-width: 660px) {
     body #cc-notification h2, 
     body #cc-notification h3, 
@@ -297,4 +566,174 @@ body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(5) {
     body #cc-notification a:visited {
         font-size: 12px!important;
     }
+
+/*	----------------- 660 px mio----------------------------------------------*/
+
+	body.pointhome[data-cart="true"] {
+		padding: 0;
+	}
+
+	#gkLogo img {
+		display: block;
+		margin: 0;
+		height: 53px;
+		width: 100px;
+		margin-left: 40px;
+	}
+
+	body.pointhome #gkSearch {
+		float: right;
+		margin-top: 10px;
+	}
+
+	#gkMobileMenu {
+		margin: 20px 0 0 10px;
+	}
+
+	body.pointhome #gkHeader #gkHeaderMod .frase-slider {
+		font-size: 20px;
+		margin-top: 15px;
+	}
+
+	body.pointhome #gkHeaderBottom .box.prod_destacados h3.header  {
+		font-size: 22px;
+	}
+
+	body.pointhome #gkHeaderBottom .box.prod_destacados {
+		margin: 0;
+		padding: 45px 0 15px 0;
+	}
+
+	body.pointhome #gkPageContent #custom_text .box h3.header {
+		margin-bottom: 30px;
+		font-size: 22px;
+		font-family: 'Open sans', sans-serif;
+		font-weight: bold;
+		width: 100%;
+	}
+
+	body.pointhome #gkPageContent #custom_text .box .content .contenedor-texto-home {
+		width: 100%;
+		font-size: 16px;
+	}
+
+	body.pointhome #gkPageContent #gkHeaderBottom {
+		background: url("../images/fondo-cats.svg") no-repeat center top;
+		background-size: cover;
+		width: 90%;
+		max-width: 1200px;
+		margin: 45px auto 0 auto;
+		padding-bottom: 30px;
+	}
+
+	body.pointhome .box.lola .header {
+		font-family: 'Open Sans', sans-serif;
+		color: #000;
+		font-size: 26px;
+		font-weight: 800;
+		line-height: 1em;
+		padding: 20px 0 20px 0;
+		position: relative;
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+
+	body.pointhome .box.lola .content {
+		clear: both;
+		overflow: hidden;
+		padding: 40px 15px 30px 15px;
+	}
+
+	body.pointhome .box.lola .vm-categories-wall-catwrapper.floatleft {
+		border-bottom: none;
+		padding: 0;
+		width: 47%;
+		margin: 1.5%;
+		display: block;
+		float: left;
+	}
+
+	body.pointhome .gkNspPM-ManufacturerGallery .gkImagesWrapper.gkImagesCols6 > a {
+		width: 50%;
+	}
+
+	body.pointhome #gkMainbody {
+		margin-bottom: 0;
+	}
+
+	body.pointhome .gkNspPM-ManufacturerGallery.gkArrows {
+		padding: 0;
+	}
+
+	body.pointhome .gkNspPM-ManufacturerGallery .gkPrevBtn {
+		left: 0;
+		display: none;
+	}
+
+	body.pointhome .gkNspPM-ManufacturerGallery .gkNextBtn {
+		background-position: -21px 0;
+		right: 0;
+		display: none;
+	}
+
+
+/*	plantas ..................................................*/
+
+	body.plantas #gkMainbody .cont_info_QS img {
+		height: 100%;
+		width: auto;
+		display: block;
+		max-width: 1300px;
+	}
+
+	/*catalogo .....................................................................*/
+
+	body.full-width #gkMainbody {
+		border: none !important;
+		margin-top: 0;
+		padding-top: 0;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 0;
+	}
+
+	body.full-width #gkBreadcrumb {
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 0;
+		padding-bottom: 0;
+		margin-bottom: 25px;
+	}
+
+	body.full-width #gkPageContent .category.floatleft.width33.vertical-separator {
+		float: left;
+		width: 33.3%;
+		padding: 15px;
+		display: block;
+	}
+
+	body.full-width #gkMainbody .spacer h2 a {
+		font-size: 12px;
+	}
+
+	body.full-width #gkSearch #mod-search-searchword {
+		width: 200px;
+		color: #fff;
+	}
+
+	body.full-width #gkMobileMenu {
+		margin-top: 5px;
+	}
+
+
+
+
+
+
+
+
+
+
+
 }
