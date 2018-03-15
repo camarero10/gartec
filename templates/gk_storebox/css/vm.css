@@ -250,9 +250,14 @@ table.cart-summary a {
 
 .browse-view .row .product .spacer img,
 .related-products-view .row .product .spacer img {
-	height: auto;
-	max-width: 90%;
-	height: 254px;
+	position: absolute;
+	right: -50%;
+	bottom: 0;
+	left: -50%;
+	top: 0;
+	margin: auto;
+	max-width: initial;
+	width: auto !important;
 }
 
 .cart-summary .inputbox {
@@ -964,6 +969,38 @@ span.floatleft,
 	padding-left: 30px
 }
 
+@media (max-width: 660px) {
+	.product-neighbours a.next-page {
+		float: right;
+		width: 200px;
+		text-align: right;
+		line-height: 20px;
+		padding-right: 30px
+	}
+
+	.product-neighbours a.previous-page {
+		float: left;
+		line-height: 20px;
+		width: 200px;
+		text-align: left;
+		padding-left: 30px
+	}
+}
+
+@media (max-width: 480px) {
+	.product-neighbours a.next-page, .product-neighbours a.previous-page {
+		float: left;
+		width: 100%;
+		text-align: center;
+	}
+
+	.product-neighbours a.previous-page {
+		margin-bottom: 15px;
+	}
+}
+
+
+
 .productDetailInfo {
 	font-size: 13px;
 	margin: 0 0 25px
@@ -973,7 +1010,8 @@ span.floatleft,
 	clear: both;
 	color: #999;
 	margin: 0 6px 0 0;
-	float: left
+	float: left;
+	width: auto;
 }
 
 .product-price {

@@ -35,26 +35,7 @@ if(vRequest::getInt('print',false)){ ?>
 
 <div class="product-container productdetails-view productdetails" >
 
-    <?php
-    // Product Navigation
-    if (VmConfig::get('product_navigation', 1)) {
-	?>
-        <div class="product-neighbours">
-	    <?php
-	    if (!empty($this->product->neighbours ['previous'][0])) {
-		$prev_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['previous'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id, FALSE);
-		echo JHtml::_('link', $prev_link, $this->product->neighbours ['previous'][0]
-			['product_name'], array('rel'=>'prev', 'class' => 'previous-page','data-dynamic-update' => '1'));
-	    }
-	    if (!empty($this->product->neighbours ['next'][0])) {
-		$next_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['next'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id, FALSE);
-		echo JHtml::_('link', $next_link, $this->product->neighbours ['next'][0] ['product_name'], array('rel'=>'next','class' => 'next-page','data-dynamic-update' => '1'));
-	    }
-	    ?>
-    	<div class="clear"></div>
-        </div>
-    <?php } // Product Navigation END
-    ?>
+<!--..-->
 
 	<?php // Back To Category Button
 	if ($this->product->virtuemart_category_id) {
@@ -279,6 +260,27 @@ if ($this->product->prices['salesPrice'] > 0) {
 }
 
 ?>
+
+    <?php
+    // Product Navigation
+    if (VmConfig::get('product_navigation', 1)) {
+        ?>
+        <div class="product-neighbours">
+            <?php
+            if (!empty($this->product->neighbours ['previous'][0])) {
+                $prev_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['previous'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id, FALSE);
+                echo JHtml::_('link', $prev_link, $this->product->neighbours ['previous'][0]
+                ['product_name'], array('rel'=>'prev', 'class' => 'previous-page','data-dynamic-update' => '1'));
+            }
+            if (!empty($this->product->neighbours ['next'][0])) {
+                $next_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['next'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id, FALSE);
+                echo JHtml::_('link', $next_link, $this->product->neighbours ['next'][0] ['product_name'], array('rel'=>'next','class' => 'next-page','data-dynamic-update' => '1'));
+            }
+            ?>
+            <div class="clear"></div>
+        </div>
+    <?php } // Product Navigation END
+    ?>
 </div>
 
 

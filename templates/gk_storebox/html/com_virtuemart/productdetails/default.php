@@ -32,20 +32,7 @@ if(vRequest::getInt('print',false)){ ?>
 <?php } ?>
 
 <div class="product-container productdetails-view productdetails">
-    <?php if (VmConfig::get('product_navigation', 1)) : ?>
-        <div class="product-neighbours">
-		    <?php
-			    if (!empty($this->product->neighbours ['previous'][0])) {
-				$prev_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['previous'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id, FALSE);
-					echo JHtml::_('link', $prev_link, '&laquo; ' . $this->product->neighbours['previous'][0]
-					['product_name'], array('rel'=>'prev', 'class' => 'previous-page','data-dynamic-update' => '1'));
-			    }
-			    if (!empty($this->product->neighbours ['next'][0])) {
-				$next_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['next'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id, FALSE);
-					echo JHtml::_('link', $next_link, $this->product->neighbours['next'][0]['product_name'] . ' &raquo;', array('rel'=>'next','class' => 'next-page','data-dynamic-update' => '1'));
-			    }
-		    ?>
-        </div>
+	<?php if (false && VmConfig::get('product_navigation', 1)) : ?>
         
         <?php // Back To Category Button
         if ($this->product->virtuemart_category_id) {
@@ -60,7 +47,6 @@ if(vRequest::getInt('print',false)){ ?>
         	<a href="<?php echo $catURL ?>" class="product-details" title="<?php echo $categoryName ?>"><?php echo vmText::sprintf('COM_VIRTUEMART_CATEGORY_BACK_TO',$categoryName) ?></a>
         </div>
     <?php endif; // Product Navigation END ?>
-
 	<div class="productDetails">
 	    <div class="img-productDetails">
 	    	<?php 
@@ -76,6 +62,56 @@ if(vRequest::getInt('print',false)){ ?>
 		    <h1 itemprop="name"><?php echo $this->product->product_name ?></h1>
 	    	<?php echo $this->product->event->afterDisplayTitle ?>
 	
+			<?php if (!empty($this->product->product_desc)) :
+			    ?>
+		        <div class="product-description">
+					<?php if (!empty($this->product->product_s_desc)) : ?>
+					<div class="product-short-description">
+					    <?php echo nl2br($this->product->product_s_desc); ?>
+					</div>
+					<?php endif; ?>
+					<?php echo $this->product->product_desc; ?>
+		        </div>
+				<?php
+				$product = $this->product;
+				$position = 'normal';
+				$class = 'product-fields';
+			
+				if (!empty($product->customfieldsSorted[$position])) {
+				?>
+					<?php foreach ($product->customfieldsSorted[$position] as $field) {
+						if ( $field->is_hidden ) //OSP http://forum.virtuemart.net/index.php?topic=99320.0
+						continue;
+						?><dl class="product-field product-field-type-<?php echo $field->field_type ?>">
+							<?php if ($field->custom_title != $custom_title and $field->show_title) : ?>
+							<dt><?php echo vmText::_ ($field->custom_title) ?></dt>
+							<?php endif; ?>
+							
+							<?php if (!empty($field->display)) : ?>
+							<dd class="product-field-display"><?php echo $field->display ?></dd>
+							<?php endif; ?>
+							
+							<?php if (!empty($field->custom_desc)) : ?>
+							<dd class="product-field-desc"><?php echo vmText::_($field->custom_desc) ?></dd>
+							<?php endif; ?>
+						</dl>
+					<?php
+						$custom_title = $field->custom_title;
+					} ?>
+			<?php
+			}
+
+		    // Product Packaging
+		    $product_packaging = '';
+		    if ($this->product->product_box) :
+			?>
+		        <div class="product-box">
+			    	<?php echo vmText::_('COM_VIRTUEMART_PRODUCT_UNITS_IN_BOX') .$this->product->product_box; ?>
+		        </div>
+		    <?php endif; // Product Packaging END ?>
+			<?php
+		    endif; // Product Description END
+			?>
 	    	
 	        <div class="product-additional-info">
 			    <?php
@@ -305,75 +341,23 @@ if(vRequest::getInt('print',false)){ ?>
 	<?php echo $this->product->event->beforeDisplayContent; ?>
 
 
-	<?php if(!empty($this->product->product_desc) && ($this->allowRating || $this->allowReview || $this->showRating || $this->showReview)) : ?>
+	<?php if(false && !empty($this->product->product_desc) && ($this->allowRating || $this->allowReview || $this->showRating || $this->showReview)) : ?>
 	<ul id="product-tabs">
 		<li data-toggle="product-description" class="active"><?php echo vmText::_('COM_VIRTUEMART_PRODUCT_DESC_TITLE') ?></li>
 		<li data-toggle="customer-reviews"><?php echo vmText::_ ('COM_VIRTUEMART_REVIEWS') ?></li>
 	</ul>
 	<?php endif; ?>
 
-	<div id="product-tabs-content">
-		<div class="product-description gk-product-tab active">
-			<?php
-			// Product Description
-			if (!empty($this->product->product_desc)) :
-			    ?>
-		        <div class="product-description">
-					<?php if (!empty($this->product->product_s_desc)) : ?>
-					<div class="product-short-description">
-					    <?php echo nl2br($this->product->product_s_desc); ?>
-					</div>
-					<?php endif; ?>
-					<?php echo $this->product->product_desc; ?>
-		        </div>
-			<?php
-		    endif; // Product Description END
-		
-			$product = $this->product;
-			$position = 'normal';
-			$class = 'product-fields';
-			
-			if (!empty($product->customfieldsSorted[$position])) {
-				?>
-					<?php foreach ($product->customfieldsSorted[$position] as $field) {
-						if ( $field->is_hidden ) //OSP http://forum.virtuemart.net/index.php?topic=99320.0
-						continue;
-						?><dl class="product-field product-field-type-<?php echo $field->field_type ?>">
-							<?php if ($field->custom_title != $custom_title and $field->show_title) : ?>
-							<dt><?php echo vmText::_ ($field->custom_title) ?></dt>
-							<?php endif; ?>
-							
-							<?php if (!empty($field->display)) : ?>
-							<dd class="product-field-display"><?php echo $field->display ?></dd>
-							<?php endif; ?>
-							
-							<?php if (!empty($field->custom_desc)) : ?>
-							<dd class="product-field-desc"><?php echo vmText::_($field->custom_desc) ?></dd>
-							<?php endif; ?>
-						</dl>
-					<?php
-						$custom_title = $field->custom_title;
-					} ?>
-			<?php
-			}
-
-		    // Product Packaging
-		    $product_packaging = '';
-		    if ($this->product->product_box) :
-			?>
-		        <div class="product-box">
-			    	<?php echo vmText::_('COM_VIRTUEMART_PRODUCT_UNITS_IN_BOX') .$this->product->product_box; ?>
-		        </div>
-		    <?php endif; // Product Packaging END ?>
-		</div>
-		
+	
 		
 		<?php if($this->allowRating || $this->allowReview || $this->showRating || $this->showReview) : ?>
-		<div class="customer-reviews gk-product-tab">
-			<?php echo $this->loadTemplate('reviews'); ?>
-		</div>
+			<div id="product-tabs-content">
+				<div class="customer-reviews gk-product-tab active">
+					<?php echo $this->loadTemplate('reviews'); ?>
+				</div>
+			</div>
 		<?php endif; ?>
-	</div>
+	
 	
 	
 	
@@ -537,6 +521,21 @@ if ($this->product->prices['salesPrice'] > 0) {
    echo shopFunctionsF::renderVmSubLayout('snippets',array('product'=>$this->product, 'currency'=>$this->currency, 'showRating'=>$this->showRating));
 }
 ?>
+<?php if (VmConfig::get('product_navigation', 1)) : ?>
+        <div class="product-neighbours">
+		    <?php
+			    if (!empty($this->product->neighbours ['previous'][0])) {
+				$prev_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['previous'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id, FALSE);
+					echo JHtml::_('link', $prev_link, '&laquo; ' . $this->product->neighbours['previous'][0]
+					['product_name'], array('rel'=>'prev', 'class' => 'previous-page','data-dynamic-update' => '1'));
+			    }
+			    if (!empty($this->product->neighbours ['next'][0])) {
+				$next_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['next'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id, FALSE);
+					echo JHtml::_('link', $next_link, $this->product->neighbours['next'][0]['product_name'] . ' &raquo;', array('rel'=>'next','class' => 'next-page','data-dynamic-update' => '1'));
+			    }
+		    ?>
+        </div>
+    <?php endif; // Product Navigation END ?>
 </div><!-- .productDetails -->
 <?php
 

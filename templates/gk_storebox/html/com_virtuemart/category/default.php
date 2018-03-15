@@ -133,7 +133,7 @@ endif;
 				<div class="product floatleft<?php echo $Browsecellwidth . $show_vertical_separator ?>">
 					<div class="spacer">
 						<div>
-							<a title="<?php echo $product->product_name ?>" href="<?php echo $product->link; ?>">
+							<a class="imgProdListado" title="<?php echo $product->product_name ?>" href="<?php echo $product->link; ?>">
 								<?php
 									echo $product->images[0]->displayMediaThumb('class="browseProductImage"', false);
 								?>

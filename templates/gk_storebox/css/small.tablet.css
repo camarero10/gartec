@@ -14,7 +14,10 @@
 body.pointhome[data-cart="true"],
 body.quienes-somos[data-cart="true"],
 body.plantas[data-cart="true"],
-body.full-width[data-cart="true"] {
+body.full-width[data-cart="true"],
+body.noticiasrrss[data-cart="true"],
+body.blog[data-cart="true"],
+body.contacto[data-cart="true"] {
 	padding-right: 0;
 	padding-left: 0;
 	padding-top: 0;
@@ -33,7 +36,10 @@ body.pointhome #custom_text .box {
 body.pointhome #gkMainWrap.gkPage #gkHeader #gkHeaderNav,
 body.quienes-somos #gkMainWrap.gkPage #gkHeader #gkHeaderNav,
 body.plantas #gkMainWrap.gkPage #gkHeader #gkHeaderNav,
-body.full-width #gkMainWrap.gkPage #gkHeader #gkHeaderNav {
+body.full-width #gkMainWrap.gkPage #gkHeader #gkHeaderNav,
+body.noticiasrrss #gkMainWrap.gkPage #gkHeader #gkHeaderNav,
+body.blog #gkMainWrap.gkPage #gkHeader #gkHeaderNav,
+body.contacto #gkMainWrap.gkPage #gkHeader #gkHeaderNav {
 	padding: 20px 20px 0 0;
 }
 
@@ -61,7 +67,7 @@ body.pointhome #gkMainWrap #gkPageContent #custom_text {
 	padding-right: 0;
 	width: 100%;
 	overflow: hidden;
-	height: 500px;
+	height: auto;
 	float: left;
 }
 
@@ -223,13 +229,17 @@ body.pointhome figcaption {
 }
 
 body.pointhome #gkMobileMenu,
-body.plantas #gkMobileMenu {
+body.plantas #gkMobileMenu,
+body.noticiasrrss #gkMobileMenu,
+body.quienes-somos #gkMobileMenu,
+body.blog #gkMobileMenu,
+body.contacto #gkMobileMenu {
 	margin-top: 5px;
 }
 
-body.quienes-somos #gkMobileMenu {
+/*body.quienes-somos #gkMobileMenu {
 	margin-top: 0;
-}
+}*/
 
 #gkHeaderBottom .box {
 	padding: 16px 16px 0 16px;
@@ -250,7 +260,10 @@ body.quienes-somos #gkMobileMenu {
 
 body.quienes-somos .cab_principal,
 body.plantas .cab_principal,
-body.full-width .cab_principal {
+body.full-width .cab_principal,
+body.noticiasrrss .cab_principal,
+body.blog .cab_principal,
+body.contacto .cab_principal {
 	width: 100%;
 	float: left;
 	display: block;
@@ -261,7 +274,10 @@ body.full-width .cab_principal {
 
 body.quienes-somos .cab_principal .text-volador,
 body.plantas .cab_principal .text-volador,
-body.full-width .cab_principal .text-volador {
+body.full-width .cab_principal .text-volador,
+body.noticiasrrss .cab_principal .text-volador,
+body.blog .cab_principal .text-volador,
+body.contacto .cab_principal .text-volador {
 	top: 55%;
 	font-size: 23px;
 	line-height: 1.2em;
@@ -342,14 +358,75 @@ body.plantas #gkMainbodyBottom .cont_info_QS p {
 	display: block;
 }
 
+/*contacto ...............................................*/
+
+body.contacto .super-contenedor-datos .cont_address {
+	position: relative;
+	width: calc(100% - 100px);
+	float: left;
+}
+
+body.contacto .super-contenedor-datos .cont_address h2 {
+	width: 100%;
+}
+
+body.contacto .super-contenedor-datos .cont_address .contact-address {
+	overflow: hidden;
+	display: block;
+	float: left;
+	position: relative;
+	width: 50%;
+	font-style: normal;
+}
+
+body.contacto .super-contenedor-datos .cont_address .contact-contactinfo {
+	display: block;
+	float: left;
+	position: relative;
+	width: 50%;
+	margin-top: 20px;
+}
 
 
+body.contacto .super-contenedor-datos .cont_address .contact-contactinfo p {
+	margin: 0 !important;
+}
 
+body.contacto .super-contenedor-datos .cont-form-contacto {
+	width: 100%;
+}
 
+body.contacto .super-contenedor-datos .cont-form-contacto h3 {
+	border: none;
+	margin: 30px 0 12px;
+	padding: 0;
+	text-align: left;
+}
 
+body.contacto .super-contenedor-datos .cont-form-contacto .contact-form {
+	text-align: left;
+	display: block;
+	overflow: hidden;
+	float: left;
+	width: 100%;
+}
 
+body.contacto .super-contenedor-datos .cont-form-contacto .contact-form .inline {
+	float: left !important;
+	margin-right: 10px;
+}
 
+body.contacto .super-contenedor-datos .cont-form-contacto .contact-form button.button.validate {
+	font-family: 'Open Sans', sans-serif;
+	float: left;
+}
 
+body.contacto #jform_captcha div {
+	width: 304px;
+	height: 78px;
+	float: left;
+	margin: 10px auto 20px auto;
+}
 
 
 

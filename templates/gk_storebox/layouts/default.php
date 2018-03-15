@@ -129,7 +129,7 @@ if($gkContentClass != '') {
 		    		<jdoc:include type="modules" name="header_bottom" style="<?php echo $this->module_styles['header_bottom']; ?>" />
 		    	</div>
 		    	<?php endif; ?>
-
+            <div class="wrapBlue">
 				<?php if($this->API->modules('custom_text')) : ?>
 					<div id="custom_text">
 						<jdoc:include type="modules" name="custom_text" style="<?php echo $this->module_styles['title']; ?>"/>
@@ -141,6 +141,7 @@ if($gkContentClass != '') {
 						<jdoc:include type="modules" name="custom_img" style="<?php echo $this->module_styles['title']; ?>"/>
 					</div>
 				<?php endif; ?>
+            </div>
 		    	
 		    	<section id="gkContent"<?php echo $gkContentClass; ?>>					
 					

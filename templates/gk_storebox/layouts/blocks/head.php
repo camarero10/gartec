@@ -70,6 +70,7 @@ $this->API->addJSFragment("\n".' $GKMenu = { height:'.($this->API->get('menu_hei
 
 $this->API->addJS($this->API->URLtemplate() . '/js/gk.scripts.js');
 $this->API->addJS($this->API->URLtemplate() . '/js/gk.menu.js');
+$this->API->addJS($this->API->URLtemplate() . '/js/custom.js');
 $this->API->addJS($this->API->URLtemplate() . '/js/fitvids.jquery.js');
 $this->API->addJSFragment( "\n".'$GK_TMPL_URL = "' . $this->API->URLtemplate() . '";'."\n" );
 $this->API->addJSFragment( "\n".'$GK_URL = "' . $this->API->URLbase() . '";'."\n" );

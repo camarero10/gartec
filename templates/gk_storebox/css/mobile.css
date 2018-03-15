@@ -146,7 +146,7 @@ body.pointhome #custom_text .box {
 	padding-top:0;
 }
 #gkSearch {
-	margin-top: 5px;
+	margin-top: 10px;
 	width: 85px;
 }
 
@@ -219,7 +219,7 @@ pre,
 }
 .contact .contact-form input,
 .contact .contact-form textarea {
-	width: 100% !important;
+	float: left !important;
 }
 
 /* Fix for the search */
@@ -795,7 +795,10 @@ article header h2 {
 body.pointhome .direccion-footer .logo-corp img,
 body.quienes-somos .direccion-footer .logo-corp img,
 body.plantas .direccion-footer .logo-corp img,
-body.full-width .direccion-footer .logo-corp img {
+body.full-width .direccion-footer .logo-corp img,
+body.contacto .direccion-footer .logo-corp img,
+body.blog .direccion-footer .logo-corp img,
+body.noticiasrrss .direccion-footer .logo-corp img {
 	margin: 20px auto;
 	width: 50%;
 	padding: 5% 25% 0 25%;
@@ -804,6 +807,9 @@ body.full-width .direccion-footer .logo-corp img {
 body.pointhome #gkBottom1,
 body.quienes-somos #gkBottom1,
 body.plantas #gkBottom1,
+body.blog #gkBottom1,
+body.noticiasrrss #gkBottom1,
+body.contacto #gkBottom1,
 body.full-width #gkBottom1 {
 	text-align: center;
 }
@@ -814,6 +820,16 @@ body.quienes-somos #gkBottom1 .box.bigtitle.double,
 body.quienes-somos #gkBottom1 .box.gkmod-4,
 body.plantas #gkBottom1 .box.bigtitle.double,
 body.plantas #gkBottom1 .box.gkmod-4,
+
+body.contacto #gkBottom1 .box.bigtitle.double,
+body.contacto #gkBottom1 .box.gkmod-4,
+
+body.noticiasrrss #gkBottom1 .box.bigtitle.double,
+body.noticiasrrss #gkBottom1 .box.gkmod-4,
+
+body.blog #gkBottom1 .box.bigtitle.double,
+body.blog #gkBottom1 .box.gkmod-4,
+
 body.full-width #gkBottom1 .box.bigtitle.double,
 body.full-width #gkBottom1 .box.gkmod-4 {
 	padding-bottom: 40px;
@@ -823,6 +839,9 @@ body.full-width #gkBottom1 .box.gkmod-4 {
 body.pointhome #gkSearch #mod-search-searchword,
 body.quienes-somos #gkSearch #mod-search-searchword,
 body.plantas #gkSearch #mod-search-searchword,
+body.noticiasrrss #gkSearch #mod-search-searchword,
+body.blog #gkSearch #mod-search-searchword,
+body.contacto #gkSearch #mod-search-searchword,
 body.full-width #gkSearch #mod-search-searchword {
 	width: 85px;
 }
@@ -889,10 +908,10 @@ body.plantas #gkMainbody .cont_info_QS .plantas-gris .cont-ajust .middle img {
 	height: auto;
 }
 
-body.plantas #gkMobileMenu,
+/*body.plantas #gkMobileMenu,
 body.full-width #gkMobileMenu {
 	margin-top: 0;
-}
+}*/
 
 /*	catalogo ................................................*/
 
@@ -901,14 +920,21 @@ body.full-width #gkMainbody .header .row > div {
 }
 
 body.full-width #gkPageContent #gkMainbody .row .product.width25.vertical-separator,
-body.full-width #gkPageContent #gkMainbody .category.floatleft.width33.vertical-separator {
+body.full-width #gkPageContent #gkMainbody .category.floatleft.width33.vertical-separator,
+body.full-width #gkPageContent #gkMainbody .category.floatleft.width25.vertical-separator {
 	float: left;
 	width: 50%;
 	padding: 25px;
 	display: block;
 }
 
+body.contacto .cab_principal img {
+	width: auto;
+}
 
+#custom_text .box {
+	text-align: justify;
+}
 
 
 
@@ -995,15 +1021,46 @@ body.full-width #gkPageContent #gkMainbody .category.floatleft.width33.vertical-
 	}
 
 	body.full-width #gkPageContent #gkMainbody .row .product.width25.vertical-separator,
-	body.full-width #gkPageContent #gkMainbody .category.floatleft.width33.vertical-separator {
+	body.full-width #gkPageContent #gkMainbody .category.floatleft.width33.vertical-separator,
+	body.full-width #gkPageContent #gkMainbody .category.floatleft.width25.vertical-separator {
 		float: left;
 		width: 100%;
 		padding: 25px;
 		display: block;
 	}
 
+/*	contacto .......................................................*/
 
+	body.contacto .super-contenedor-datos .cont_address h2 {
+		text-align: center;
+	}
 
+	body.contacto .contact .jicons-icons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		margin: 0 auto !important;
+	}
+
+	body.contacto .super-contenedor-datos .cont_address address,
+	body.contacto .super-contenedor-datos .cont_address .contact-telephone {
+		text-align: center;
+		overflow: hidden;
+		margin: 10px 0 20px 0;
+		display: block;
+	}
+
+	body.contacto .super-contenedor-datos .cont_address .contact-address,
+	body.contacto .super-contenedor-datos .cont_address .contact-contactinfo {
+		width: 100%;
+		text-align: center;
+	}
+
+	body.contacto .rc-anchor-light.rc-anchor-normal {
+		border: 1px solid #d3d3d3;
+		width: 284px !important;
+	}
 
 
 

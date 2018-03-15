@@ -141,6 +141,11 @@ ul li.itemResizer #fontIncrease {
 .latestView {
 	margin: 0 -10px;
 }
+
+body.blog .latestView {
+	margin: 0;
+}
+
 .itemBottom {
 	clear: both;
 	margin: 0 0 6px;

@@ -214,6 +214,7 @@
     }
 
     body.full-width #gkPageContent .category.floatleft.width33.vertical-separator,
+    body.full-width #gkPageContent .category.floatleft.width25.vertical-separator,
     body.full-width #gkMainbody .row .product.width25.vertical-separator {
         float: left;
         width: 33.3%;

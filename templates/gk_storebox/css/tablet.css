@@ -12,7 +12,10 @@
 
 body.quienes-somos[data-cart="true"],
 body.plantas[data-cart="true"],
-body.full-width[data-cart="true"] {
+body.full-width[data-cart="true"],
+body.noticiasrrss[data-cart="true"],
+body.blog[data-cart="true"],
+body.contacto[data-cart="true"] {
 	padding-right: 10px;
 }
 
@@ -24,7 +27,10 @@ body.pointhome[data-cart="true"] {
 body.pointhome .gkPage,
 body.quienes-somos .gkPage,
 body.plantas .gkPage,
-body.full-width .gkPage{
+body.full-width .gkPage,
+body.noticiasrrss .gkPage,
+body.blog .gkPage,
+body.contacto .gkPage {
 	width: 100%;
 }
 
@@ -123,8 +129,29 @@ body.pointhome #gkMainWrap #gkPageContent #custom_text {
 	padding-right: 0;
 	width: calc(50% - 20px);
 	overflow: hidden;
-	height: 500px;
+	height: auto;
 	float: left;
+}
+
+#gkPageContent #custom_img {
+	background: #2E669F;
+	padding-left: 0;
+	padding-right: 0;
+	width: 50%;
+	overflow: hidden;
+	height: auto;
+	float: left;
+}
+
+#gkPageContent #custom_img .box {
+	padding: 0;
+	margin-bottom: 0px;
+}
+
+#gkPageContent #custom_img .box div.content {
+	clear: both;
+	overflow: hidden;
+	padding: 0 30px 0 30px;
 }
 
 #gkPageContent #custom_text .box .content .contenedor-texto-home {
@@ -524,7 +551,33 @@ body.full-width #gkBreadcrumb {
 
 
 
+
+
 /*---------------------------------------------------------------------------*/
+
+body.blog #gkContentWrap {
+	width: 80% !important;
+	margin: 0 auto !important;
+	float: none;
+	margin-top: 32px !important;
+}
+
+/*contacto ..............................*/
+
+body.contacto .super-contenedor-datos .cont_address {
+	position: relative;
+	width: 150px;
+	float: left;
+}
+
+body.contacto .super-contenedor-datos .cont-form-contacto {
+	width: calc(100% - 280px);
+}
+
+body.contacto .super-contenedor-datos .cont_address h2 {
+	font-size: 30px;
+}
+
 
 
 
@@ -726,10 +779,63 @@ body.full-width #gkBreadcrumb {
 		margin-top: 5px;
 	}
 
+	.productdetails-view .productDetails > div {
+		width: 100%;
+	}
+
+	body.full-width #gkPageContent .productdetails-view .productDetails .text-productDetails {
+		width: 100%;
+		text-align: left;
+	}
+
+	#gkMainbody .vm-product-details-container .productDetailInfo {
+		float: left;
+	}
+
+	.product-price {
+		display: none;
+	}
+
+	.product-additional-info {
+		display: none;
+	}
+
+	.productDetails .main-image img, #product-tabs-content > div.active {
+		display: block!important;
+		margin: 0 auto !important;
+	}
 
 
 
 
+/*contacto .........................................*/
+
+	.contact .contact-form input,
+	.contact .contact-form textarea {
+		width: calc(100% - 20px) !important;
+		float: left !important;
+	}
+
+	.contact .contact-form input[type="text"],
+	.contact .contact-form input[type="email"],
+	.contact .contact-form textarea {
+		width: calc(100% - 20px) !important;
+	}
+
+	.contact .contact-form dd {
+		display: block;
+		width: 100%;
+		height: auto;
+		float: left;
+		margin-left: 0;
+	}
+
+	.contact .contact-form legend {
+		color: #999;
+		width: calc( 100% - 20px);
+		font-size: 13px;
+		margin: 0 0 24px;
+	}
 
 
 
