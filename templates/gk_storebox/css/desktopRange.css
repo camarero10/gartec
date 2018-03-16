@@ -91,10 +91,10 @@
     }
 
     body.plantas #gkMainbody .cont_info_QS img {
-        height: 100%;
+/*        height: 100%;*/
         width: auto;
         display: block;
-        max-width: 1401px;
+       /* max-width: 1401px;*/
     }
 
 /*    catalogo .............................................*/
@@ -200,10 +200,10 @@
 /*    plantas ................................................*/
 
     body.plantas #gkMainbody .cont_info_QS img {
-        height: 100%;
+      /*  height: 100%;*/
         width: auto;
         display: block;
-        max-width: 1201px;
+        /*max-width: 1201px;*/
     }
 
 /*    catalogo ...................................................*/

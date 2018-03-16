@@ -217,6 +217,7 @@ class NSP_GK5_com_virtuemart_Model {
 		$query_news = '
 		SELECT DISTINCT
             content.virtuemart_product_id AS id,
+ 			contentR.product_sku AS product_sku,
             content.product_name AS title,
             content.product_desc AS text,
             contentR.modified_on AS date,

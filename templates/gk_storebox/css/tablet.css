@@ -734,10 +734,10 @@ body.contacto .super-contenedor-datos .cont_address h2 {
 /*	plantas ..................................................*/
 
 	body.plantas #gkMainbody .cont_info_QS img {
-		height: 100%;
+		/*height: 100%;*/
 		width: auto;
 		display: block;
-		max-width: 1300px;
+		/*max-width: 1300px;*/
 	}
 
 	/*catalogo .....................................................................*/

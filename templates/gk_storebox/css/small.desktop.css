@@ -115,6 +115,19 @@ body[data-cart="true"] {
 
 
 
+@media (max-width: 991px) {
+
+	#gkBottom1 .gkCols6 .box.double.gkmod-3 {
+		width: 33.3%;
+	}
+
+	#gkBottom1 .gkCols6 .box.gkmod-3 {
+		width: 33.3%;
+	}
+
+}/* --------------------------------------------------------------*/
+
+
 
 
 

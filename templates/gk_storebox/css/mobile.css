@@ -254,6 +254,12 @@ fieldset {
 	font-size: 11px;
 }
 
+.cont_info_QS p,
+li.cont_info_QS {
+	text-align: justify;
+}
+
+
 @media only screen and (max-width: 400px) {
 	#gkMainbody table {
 		width: 100%!important;
@@ -896,10 +902,10 @@ body.quienes-somos #gkMainbody .cont_info_QS .container-equipo {
 
 
 body.plantas #gkMainbody .itemBody .cont_info_QS img {
-	height: 523px;
+	/*height: 523px;*/
 	width: auto;
 	display: block;
-	max-width: 1920px;
+	/*max-width: 1920px;*/
 }
 
 body.plantas #gkMainbody .cont_info_QS .plantas-gris .cont-ajust .middle img {
@@ -1001,10 +1007,10 @@ body.contacto .cab_principal img {
 	}
 
 	body.plantas #gkMainbody .itemBody .cont_info_QS img {
-		height: 600px;
+		/*height: 600px;*/
 		width: auto;
 		display: block;
-		max-width: 1920px;
+		/*max-width: 1920px;*/
 	}
 
 

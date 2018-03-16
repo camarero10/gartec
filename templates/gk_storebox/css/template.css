@@ -303,7 +303,11 @@ body.pointhome #gkContent.gkContentNoSidebar {
 }
 
 #gkMainbody {
-	margin-bottom: 30px;
+/*	margin-bottom: 30px;*/
+}
+
+.pointhome #gkContentWrap {
+	margin-bottom: 0 !important;
 }
 
 body.pointhome #gkContent.gkContentNoSidebar #gkMainbody {
@@ -411,11 +415,16 @@ body.pointhome #gkContent.gkContentNoSidebar #gkMainbody {
 	padding: 0;
 }
 
+.pointhome .ref_home {
+	padding: 0 0 0 20px;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
 #gkHeaderBottom .gkNspPM-ProductGallery .gkImage h4 {
 	font-size: 13px;
 	font-weight: bold;
 	letter-spacing: normal;
-	margin: 10px 0;
+	margin: 0;
 	text-transform: uppercase;
 	padding-left: 20px;
 	height: 32px;
@@ -1739,6 +1748,12 @@ body.quienes-somos #gkPageContent {
 	max-width: 100%;
 }
 
+body.quienes-somos #gkContentWrap,
+body.quienes-somos #gkMainbody,
+body.plantas #gkMainbody {
+margin-bottom: 0;
+}
+
 body.quienes-somos #gkPageContent #gkContent {
 	width: 100%;
 	max-width: 100%;
@@ -1752,9 +1767,11 @@ body.quienes-somos #gkPageContent #gkContent #gkSocialAPI {
 	max-width: 1200px;
 }
 
-body.quienes-somos #gkMainbody .cont_info_QS {
+body.quienes-somos #gkMainbody .cont_info_QS,
+body.plantas #gkMainbody .cont_info_QS {
 	position: relative;
 	overflow: hidden;
+	line-height: 0;
 }
 
 body.quienes-somos #gkMainbody .cont_info_QS p {
@@ -1779,9 +1796,11 @@ body.plantas #gkMainbody .cont_info_QS .titular-text-quienes {
 	color: #000;
 }
 
-body.quienes-somos #gkMainbody .cont_info_QS img {
+body.quienes-somos #gkMainbody .cont_info_QS img,
+body.plantas #gkMainbody .cont_info_QS img {
 	width: 100%;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
+	margin-bottom: 0;
 }
 
 body.quienes-somos #gkMainbody .cont_info_QS .text-blanco-imagen {
@@ -2372,3 +2391,48 @@ span.vm-img-desc {
 .spacer {
 	position: relative !important;
 }
+
+html body p,
+html body li {
+	line-height: 2em !important;
+}
+
+body.plantas #gkMainbody .cont_info_QS p,
+body.plantas #gkMainbody li.cont_info_QS {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto 15px auto;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.ref {
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+.text-productDetails .ref {
+	color: cornflowerblue;
+	font-weight: bold;
+	margin: 10px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -61,7 +61,7 @@ if(vRequest::getInt('print',false)){ ?>
 	   	<div class="text-productDetails">
 		    <h1 itemprop="name"><?php echo $this->product->product_name ?></h1>
 	    	<?php echo $this->product->event->afterDisplayTitle ?>
-	
+			<div class="ref">Ref: <?php echo $this->product->product_sku;?></div>
 			<?php if (!empty($this->product->product_desc)) :
 			    ?>
 		        <div class="product-description">

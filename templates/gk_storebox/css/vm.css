@@ -653,6 +653,10 @@ h3.catProductTitle {
 	text-transform: uppercase
 }
 
+h3.catProductTitle {
+	margin-top: 0 !important;
+}
+
 .featured-view h4,
 .latest-view h4,
 .topten-view h4,

@@ -94,6 +94,11 @@ class NSP_GK5_Product_Gallery {
 			if($this->get_image($i)) {
 				echo '<div class="gkImage show '.(($img_iterator + 1 <= $this->parent->config['portal_mode_product_gallery_cols']) ? ' active' : ''). '">';
 				echo '<a href="' . $this->get_link($i) . '"><img src="'.strip_tags($this->get_image($i)).'" alt="'.strip_tags($this->parent->content[$i]['title']).'" /></a>';
+				
+				if ($this->mode == 'com_virtuemart')
+				{
+					echo '<div class="ref_home"> Ref: '.$this->parent->content[$i]['product_sku'].'</div>';
+				}
 				echo '<h4><a href="' . $this->get_link($i) . '">' . $this->parent->content[$i]['title'] . '</a></h4>';
 				
 				$store_output = $this->get_store($this->parent->config, $this->parent->content[$i]['id'], $i);

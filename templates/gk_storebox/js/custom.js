@@ -6,11 +6,7 @@ jQuery(document).ready(function(){
 
     jQuery("#gkMainbody a.imgProdListado").height(div_ancho);
     jQuery("#gkMainbody a.imgProdListado img").height(div_ancho);
-
-});
-
-jQuery(document).ready(function(){
-
+    
     jQuery(window).on('resize', function(){
         if (jQuery(this).height() >= div_ancho){
             jQuery('#gkMainbody a.imgProdListado img').css('max-height', div_ancho); //set max height
@@ -20,6 +16,3 @@ jQuery(document).ready(function(){
     }).resize()
 
 });
-
-
-

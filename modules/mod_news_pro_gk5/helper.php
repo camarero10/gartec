@@ -114,8 +114,8 @@ class NSP_GK5_Helper {
 		$this->content = call_user_func(array($model_class, "getArticles"), $categories, $this->config, $amountOfArts);
 	}
 	// RENDERING LAYOUT
-	function renderLayout() {	
-		if($this->config['module_mode'] !== 'normal') {
+	function renderLayout() {
+		if($this->config['module_mode'] !== 'normal') { 
 			$this->render_portal_mode($this->config['module_mode']);
 			//
 			// Load CSS and JS of Portal Mode
@@ -165,7 +165,7 @@ class NSP_GK5_Helper {
 					$document->addScript($js_path);
 				}
 			}
-		} else {	
+		} else {
 			//
 			if(!class_exists('NSP_GK5_'.$this->source.'_Controller')) {
 				require_once (dirname(__FILE__).DS.'data_sources'.DS.$this->source.DS.'controller.php');

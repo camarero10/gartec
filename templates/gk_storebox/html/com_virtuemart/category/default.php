@@ -29,7 +29,28 @@ $js = "jQuery(document).ready(function () {
 		function() { jQuery(this).find('.orderlist').stop().show()},
 		function() { jQuery(this).find('.orderlist').stop().hide()}
 	)
-});";
+
+	recalculateHeight();
+	
+});
+
+jQuery(window).on('resize', function(){
+       recalculateHeight();
+});
+
+function recalculateHeight()
+{
+	var max_height = 0;
+	jQuery('#productList .product').each(function(index,el){
+		if (jQuery(el).height() > max_height)
+		{
+			max_height = jQuery(el).height();
+
+		}
+	});
+
+	jQuery('#productList .product').height(max_height);
+}";
 
 $document = JFactory::getDocument(); 
 $document->addScriptDeclaration($js);
@@ -124,7 +145,7 @@ endif;
 				</div>
 				<?php endif ?>
 		</form>
-		<div class="row">
+		<div class="row" id="productList">
 		<?php // Start the Output
 		foreach ( $this->products as $product ) :
 		$show_vertical_separator = $verticalseparator;
@@ -141,7 +162,10 @@ endif;
 						</div>
 						
 						<div>
-							<h3 class="catProductTitle"><?php echo JHTML::link($product->link, $product->product_name); ?></h3>
+							<div class="ref">Ref: <?php echo $product->product_sku; ?></div>
+							
+							<?php $name = strlen($product->product_name) <= 30 ? $product->product_name : substr($product->product_name,0,27).'...';?>
+							<h3 class="catProductTitle"><?php echo JHTML::link($product->link, $name); ?></h3>
 							
 							<div class="catProductPrice" id="productPrice<?php echo $product->virtuemart_product_id ?>">
 								<?php

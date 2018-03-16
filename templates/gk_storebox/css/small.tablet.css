@@ -297,9 +297,11 @@ body.quienes-somos #gkMainbody .cont_info_QS .titular-text-quienes, body.plantas
 	padding-right: 20px;
 }
 
-body.quienes-somos #gkMainbody .cont_info_QS img {
+body.quienes-somos #gkMainbody .cont_info_QS img,
+body.plantas #gkMainbody .cont_info_QS img {
 	width: 100%;
-	margin-bottom: 20px;
+/*	margin-bottom: 20px;*/
+	margin-bottom: 0 !important;
 }
 
 body.quienes-somos #gkMainbody .itemBody .cont_info_QS .text-blanco-imagen {
@@ -428,9 +430,20 @@ body.contacto #jform_captcha div {
 	margin: 10px auto 20px auto;
 }
 
+/*pie footer ------------------------------------------------------*/
 
 
 
+#gkBottom1 .gkCols6 .box.double.gkmod-3,
+#gkBottom1 .gkCols6 .box.gkmod-3 {
+	width: 80% !important;
+	text-align: center !important;
+	border-bottom: 1px solid rgba(255,255,255,0.35) !important;
+	margin: 0 10% 0 10% !important;
+	padding: 30px 0 30px 0 !important;
+}
 
-
+#gkBottom1 .gkCols6 .box.gkmod-3:nth-child(3) {
+	border:none !important;
+}
 
