@@ -71,6 +71,22 @@ if(vRequest::getInt('print',false)){ ?>
 					</div>
 					<?php endif; ?>
 					<?php echo $this->product->product_desc; ?>
+					<p>
+					<?php
+			        	if (file_exists(JPATH_ROOT.DIRECTORY_SEPARATOR.'images'.DIRECTORY_SEPARATOR.'fichas'.DIRECTORY_SEPARATOR.$this->product->product_sku.'.pdf'))
+			        	{
+			        		echo '<a href="'.JUri::root().'images/fichas/'.$this->product->product_sku.'.pdf" target="_blank">Ver ficha del producto</a>';
+			        	}
+			        	else if (file_exists(JPATH_ROOT.DIRECTORY_SEPARATOR.'images'.DIRECTORY_SEPARATOR.'fichas'.DIRECTORY_SEPARATOR.strtolower($this->product->product_sku).'pdf'))
+			        	{
+			        		echo '<a href="'.JUri::root().'images/fichas/'.strtolower($this->product->product_sku).'.pdf" target="_blank">Ver ficha del producto</a>';
+			        	}
+			        	else if (file_exists(JPATH_ROOT.DIRECTORY_SEPARATOR.'images'.DIRECTORY_SEPARATOR.'fichas'.DIRECTORY_SEPARATOR.strtoupper($this->product->product_sku).'pdf'))
+			        	{
+			        		echo '<a href="'.JUri::root().'images/fichas/'.strtoupper($this->product->product_sku).'.pdf" target="_blank">Ver ficha del producto</a>';
+			        	}
+		        	?>
+					</p>
 		        </div>
 				<?php
 				$product = $this->product;
